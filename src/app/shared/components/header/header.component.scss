@@ -1,0 +1,70 @@
+.header {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 13.56%,
+    rgba(0, 0, 0, 0.6) 84.01%
+  );
+
+  width: 100%;
+  max-width: 1920px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 100px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: "Fira Code";
+    font-weight: 400;
+    font-size: 20px;
+    position: relative; /* Optional, aber hilft bei der Kontrolle */
+    padding-bottom: 4px; /* Platz für den Punkt lassen */
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #6ad7bf;
+      opacity: 0;
+      transition: opacity 0.1s ease;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}
+
+.logo {
+  img {
+    width: 180px;
+  }
+}
+
+.toogle-button {
+  cursor: pointer;
+  color: white;
+  width: 85px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: transparent;
+  border: 1px solid #3dcfb6;
+
+  &:hover {
+    border: 1px solid white;
+  }
+}

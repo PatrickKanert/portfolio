@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+app-header {
+  display: flex;
+  justify-content: center;
+}
+
+app-landing-page {
+  display: flex;
+  justify-content: center;
+}
