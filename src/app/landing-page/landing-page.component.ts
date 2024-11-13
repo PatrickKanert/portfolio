@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss',
 })
-export class LandingPageComponent {}
+export class LandingPageComponent {
+  sliderItems = [
+    'Frontend Developer',
+    'Based in Munich',
+    'Available for remote work',
+    'Open to work',
+  ];
+}

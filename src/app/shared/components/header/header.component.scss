@@ -1,19 +1,26 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.header-bg {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 100px;
+  box-sizing: border-box;
+  display: flex;
+  width: 100vw;
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0) 13.56%,
     rgba(0, 0, 0, 0.6) 84.01%
   );
-
-  width: 100%;
-  max-width: 1920px;
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 100px;
-  box-sizing: border-box;
 }
 
 nav {
@@ -27,8 +34,8 @@ nav {
     font-family: "Fira Code";
     font-weight: 400;
     font-size: 20px;
-    position: relative; /* Optional, aber hilft bei der Kontrolle */
-    padding-bottom: 4px; /* Platz für den Punkt lassen */
+    position: relative;
+    padding-bottom: 4px;
 
     &::after {
       content: "";
