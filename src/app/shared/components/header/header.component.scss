@@ -75,3 +75,77 @@ nav {
     border: 1px solid white;
   }
 }
+.custom-toggle {
+  display: inline-block;
+  position: relative;
+}
+
+.toggle-input {
+  display: none; /* Verstecke das Standard-Checkbox-Element */
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: background-color 0.3s ease;
+  border: 1px solid #3dcfb6;
+
+  &:hover {
+    border: 1px solid white;
+  }
+}
+
+.toggle-label .toggle-text {
+  position: absolute;
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+
+.toggle-label .en {
+  left: 10px;
+}
+
+.toggle-label .de {
+  right: 10px;
+  color: #3dcfb6;
+}
+
+.toggle-thumb {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  transform: translateY(-50%);
+  transition: left 0.3s ease;
+}
+
+.toggle-input:checked + .toggle-label {
+  background-color: #3dcfb6;
+}
+
+.toggle-input:checked + .toggle-label .toggle-thumb {
+  left: 39px; /* Der Thumb verschiebt sich nach rechts */
+}
+
+.toggle-input:checked + .toggle-label .en {
+  opacity: 0;
+}
+
+.toggle-input:checked + .toggle-label .de {
+  opacity: 1;
+}

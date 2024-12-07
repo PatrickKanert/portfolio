@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 export class LandingPageComponent {
   sliderItems = [
     'Frontend Developer',
-    'Based in Munich',
+    'Based near Passau',
     'Available for remote work',
     'Open to work',
   ];

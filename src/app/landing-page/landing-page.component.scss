@@ -92,24 +92,25 @@ h2 {
 }
 
 .slider {
-  background-color: lightgray;
+  background-color: #ffffff1f;
+  backdrop-filter: blur(5.3px);
   rotate: -3deg;
   display: flex;
   width: 101%;
   position: fixed;
   bottom: 38px;
-  gap: 56px;
+  gap: 32px;
   padding: 12px 32px;
 
   .slider-content {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
     animation: slideAnimation 20s linear infinite;
     white-space: nowrap;
     div {
       display: flex;
-      gap: 16px;
+      gap: 32px;
       font-family: Karla;
       color: #6ad7bf;
       font-size: 32px;
@@ -117,13 +118,11 @@ h2 {
       line-height: 38.4px;
       text-align: left;
       text-decoration-skip-ink: none;
+      div {
+        font-size: 40px;
+      }
     }
   }
-}
-
-.dot {
-  // margin: 0 20px; /* Abstand um den Punkt */
-  font-size: 100px; /* Punktgröße */
 }
 
 @keyframes slideAnimation {
