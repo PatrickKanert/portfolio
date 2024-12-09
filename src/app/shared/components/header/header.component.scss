@@ -75,10 +75,96 @@ nav {
     border: 1px solid white;
   }
 }
+
 .custom-toggle {
   display: inline-block;
   position: relative;
 }
+
+// .toggle-input {
+//   display: none; /* Verstecke das Standard-Checkbox-Element */
+// }
+
+// .toggle-label {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   width: 80px;
+//   height: 30px;
+//   background-color: transparent;
+//   border-radius: 20px;
+//   position: relative;
+//   cursor: pointer;
+//   padding: 0 10px;
+//   transition: background-color 0.3s ease;
+//   border: 1px solid #3dcfb6;
+//   transition: border-color 0.3s ease;
+
+//   &:hover {
+//     border-color: white;
+//   }
+
+//   &:hover .toggle-input:checked .en {
+//     color: #3dcfb6;
+//   }
+// }
+
+// .toggle-label .toggle-text {
+//   position: absolute;
+//   font-family: "Fira Code", sans-serif;
+//   font-size: 16px;
+//   color: white;
+//   text-transform: uppercase;
+//   transition: opacity 0.3s ease;
+//   z-index: 1;
+//   transition: color 0.3s ease;
+// }
+
+// .toggle-label:hover .de {
+//   color: #3dcfb6;
+// }
+
+// .toggle-label .en {
+//   left: 10px;
+//   color: white;
+//   font-weight: bold;
+//   z-index: 1;
+// }
+
+// .toggle-label .de {
+//   right: 10px;
+//   color: #3dcfb680;
+//   z-index: 1;
+// }
+
+// .toggle-thumb {
+//   width: 40px;
+//   height: 30px;
+//   background-color: #3dcfb6;
+//   border-radius: 100px;
+//   position: absolute;
+//   top: 50%;
+//   left: -1px;
+//   transform: translateY(-50%);
+//   transition: left 0.3s ease;
+//   z-index: 0;
+// }
+
+// .toggle-input:checked + .toggle-label .toggle-thumb {
+//   left: 39px; /* Der Thumb verschiebt sich nach rechts */
+// }
+
+// .toggle-input:checked + .toggle-label .en {
+//   color: #3dcfb680;
+//   font-weight: normal;
+//   z-index: 1;
+// }
+
+// .toggle-input:checked + .toggle-label .de {
+//   color: white;
+//   font-weight: bold;
+//   z-index: 1;
+// }
 
 .toggle-input {
   display: none; /* Verstecke das Standard-Checkbox-Element */
@@ -89,63 +175,77 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 80px;
-  height: 40px;
+  height: 30px;
   background-color: transparent;
   border-radius: 20px;
   position: relative;
   cursor: pointer;
   padding: 0 10px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
   border: 1px solid #3dcfb6;
 
   &:hover {
-    border: 1px solid white;
+    border-color: white;
   }
 }
 
 .toggle-label .toggle-text {
   position: absolute;
-  font-family: "Karla", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
+  font-family: "Fira Code", sans-serif;
+  font-size: 16px;
   color: white;
   text-transform: uppercase;
-  transition: opacity 0.3s ease;
+  z-index: 1;
+  transition: color 0.3s ease;
 }
 
 .toggle-label .en {
   left: 10px;
+  color: white;
+  font-weight: bold;
 }
 
 .toggle-label .de {
   right: 10px;
-  color: #3dcfb6;
+  color: #3dcfb680;
+  font-weight: normal;
 }
 
 .toggle-thumb {
   width: 40px;
-  height: 40px;
-  background-color: white;
+  height: 30px;
+  background-color: #3dcfb6;
   border-radius: 100px;
   position: absolute;
   top: 50%;
   left: -1px;
   transform: translateY(-50%);
   transition: left 0.3s ease;
-}
-
-.toggle-input:checked + .toggle-label {
-  background-color: #3dcfb6;
+  z-index: 0;
 }
 
 .toggle-input:checked + .toggle-label .toggle-thumb {
-  left: 39px; /* Der Thumb verschiebt sich nach rechts */
+  left: 39px;
 }
 
 .toggle-input:checked + .toggle-label .en {
-  opacity: 0;
+  color: #3dcfb680;
+  font-weight: normal;
 }
 
 .toggle-input:checked + .toggle-label .de {
-  opacity: 1;
+  color: white;
+  font-weight: bold;
+}
+
+.toggle-input:not(:checked) + .toggle-label:hover .de {
+  color: #3dcfb6;
+}
+
+.toggle-input:checked + .toggle-label:hover .en {
+  color: #3dcfb6;
+}
+
+.toggle-label:hover {
+  border-color: white;
 }

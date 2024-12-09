@@ -92,15 +92,15 @@ h2 {
 }
 
 .slider {
+  width: 101%;
   background-color: #ffffff1f;
   backdrop-filter: blur(5.3px);
   rotate: -3deg;
   display: flex;
-  width: 101%;
   position: fixed;
-  bottom: 38px;
+  bottom: 50px;
   gap: 32px;
-  padding: 12px 32px;
+  padding: 12px 0px;
 
   .slider-content {
     display: flex;
@@ -130,6 +130,6 @@ h2 {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%); /* Die gesamte Textreihe läuft nach links */
+    transform: translateX(-100%);
   }
 }
