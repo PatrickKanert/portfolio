@@ -1,9 +1,12 @@
 .content {
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .intro-section {
@@ -91,45 +94,52 @@ h2 {
   }
 }
 
-.slider {
-  width: 101%;
+.info-carousel {
+  width: 150%;
+  height: 60px;
   background-color: #ffffff1f;
-  backdrop-filter: blur(5.3px);
   rotate: -3deg;
-  display: flex;
-  position: fixed;
-  bottom: 50px;
-  gap: 32px;
-  padding: 12px 0px;
+  font-size: 32px;
+  position: absolute;
+  bottom: 90px;
 
-  .slider-content {
+  --gap: 56px;
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+
+  ul {
+    list-style: none;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 32px;
-    animation: slideAnimation 20s linear infinite;
-    white-space: nowrap;
-    div {
-      display: flex;
-      gap: 32px;
-      font-family: Karla;
-      color: #6ad7bf;
-      font-size: 32px;
-      font-weight: 400;
-      line-height: 38.4px;
-      text-align: left;
-      text-decoration-skip-ink: none;
-      div {
-        font-size: 40px;
-      }
+    gap: var(--gap);
+    font-family: Karla;
+    color: #6ad7bf;
+    font-size: 32px;
+    font-weight: 400;
+    min-width: 100%;
+    flex-shrink: 0;
+    animation: scroll 30s linear infinite;
+  }
+  li {
+    span {
+      margin-left: 56px;
+      font-weight: bold;
     }
   }
 }
 
-@keyframes slideAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
+@keyframes scroll {
+  to {
     transform: translateX(-100%);
   }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
