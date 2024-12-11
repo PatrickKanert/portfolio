@@ -18,6 +18,7 @@
   display: flex;
   gap: 48px;
   margin-top: 40px;
+  z-index: 99;
   .btn-container {
     display: flex;
     gap: 48px;
@@ -102,11 +103,12 @@ h2 {
   font-size: 32px;
   position: absolute;
   bottom: 90px;
-
   --gap: 56px;
   display: flex;
   align-items: center;
   gap: var(--gap);
+  z-index: 2;
+  backdrop-filter: blur(5px);
 
   ul {
     list-style: none;
@@ -142,4 +144,71 @@ h2 {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+}
+
+.info-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0px 100px;
+  position: absolute;
+  bottom: 0;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.arrow-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 30px;
+  border-radius: 25px;
+  border: 1px solid #6ad7bf;
+
+  i {
+    color: white;
+  }
+}
+
+.placeholder-line-scroll {
+  width: 1px;
+  height: 290px;
+  background-color: #6ad7bf;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  .flip-email {
+    display: inline-block;
+    writing-mode: vertical-lr;
+    font-family: Karla, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: white;
+    text-decoration: none;
+    transform: scale(-1);
+    &:hover {
+      color: #6ad7bf;
+    }
+  }
+}
+
+.placeholder-line-social-media {
+  width: 1px;
+  height: 240px;
+  background-color: white;
 }
