@@ -84,10 +84,10 @@ h2 {
   0% {
     transform: translateX(0);
   }
-  50% {
+  49.99% {
     transform: translateX(-200%);
   }
-  51% {
+  50% {
     transform: translateX(200%);
   }
   100% {
@@ -173,8 +173,17 @@ h2 {
   border-radius: 25px;
   border: 1px solid #6ad7bf;
 
-  i {
-    color: white;
+  svg {
+    animation: arrow-down 500ms linear alternate infinite;
+  }
+}
+
+@keyframes arrow-down {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(8px);
   }
 }
 
@@ -191,6 +200,38 @@ h2 {
   justify-content: center;
   gap: 24px;
 
+  a {
+    position: relative;
+
+    img {
+      width: 32px;
+      height: 32px;
+      display: block;
+      transition: transform 0.3s ease;
+      &:hover {
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -12px;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #6ad7bf;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
   .flip-email {
     display: inline-block;
     writing-mode: vertical-lr;
@@ -200,7 +241,9 @@ h2 {
     line-height: 21.6px;
     color: white;
     text-decoration: none;
-    transform: scale(-1);
+    transform: rotate(180deg);
+    z-index: 10;
+
     &:hover {
       color: #6ad7bf;
     }
