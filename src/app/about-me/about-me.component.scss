@@ -1,21 +1,26 @@
 .wrapper {
+  background-color: #1c1c1c;
   padding: 145px 100px;
   display: flex;
   justify-content: center;
+}
+
+.content {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
   gap: 100px;
-  background-color: #1c1c1c;
 
   img {
     width: 30%;
-    height: 30%;
-    max-width: 377px;
-    max-height: 500px;
+    height: max-content;
+    max-width: 740px;
     border-radius: 30px;
   }
 }
 
 h2 {
-  font-family: Fira Code;
+  font-family: "Fira-Code", Arial, Helvetica, sans-serif;
   font-size: 64px;
   font-weight: 700;
   line-height: 64px;
@@ -23,7 +28,7 @@ h2 {
 }
 
 h3 {
-  font-family: Karla;
+  font-family: "Karla", Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 500;
   color: #3dcfb6;
@@ -46,7 +51,7 @@ h3 {
 
   span {
     color: white;
-    font-family: Karla;
+    font-family: "Karla", Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.6px;

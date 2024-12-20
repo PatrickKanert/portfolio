@@ -32,7 +32,7 @@ nav {
   a {
     text-decoration: none;
     color: white;
-    font-family: "Fira Code";
+    font-family: "Fira-Code", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 20px;
     position: relative;
@@ -107,7 +107,7 @@ nav {
 
 .toggle-label .toggle-text {
   position: absolute;
-  font-family: "Fira Code", sans-serif;
+  font-family: "Fira-Code", Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: white;
   text-transform: uppercase;

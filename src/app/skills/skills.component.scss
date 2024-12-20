@@ -1,0 +1,103 @@
+.skills {
+  background: radial-gradient(circle at 0% 50%, #08463b -20%, #1c1c1c 20%);
+  display: flex;
+  justify-content: center;
+  padding: 0px 100px;
+}
+
+.content {
+  max-width: 1440px;
+}
+
+h1 {
+  font-family: "Fira-Code", Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3dcfb6;
+}
+
+h2 {
+  font-family: "Karla", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.06px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3dcfb6;
+}
+
+.technologies {
+  display: flex;
+  gap: 100px;
+}
+
+.skill-set {
+  background-color: #3dcfb61a;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  padding: 32px;
+  border: 1px solid #3dcfb6;
+  border-radius: 30px;
+  max-width: 600px;
+
+  span {
+    color: white;
+    font-family: Karla;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: justified;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    > div {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 72px;
+
+  > div {
+    width: 105px;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > span {
+      color: white;
+      font-family: "Fira-Code";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.6px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin-top: 8px;
+    }
+  }
+}
