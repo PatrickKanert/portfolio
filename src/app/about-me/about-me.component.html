@@ -1,9 +1,12 @@
-<div class="wrapper">
-    <div class="content">
-        <img src="assets/img/me.jpg" alt="">
-        <div class="description-of-me-container">
+<div ngClass="wrapper">
+    <div ngClass="content">
+        <div [ngClass]="{'image-background': true, 'hovered': isHovered}" (mouseenter)="onMouseEnter()"
+            (mouseleave)="onMouseLeave()">
+            <img src="assets/img/me.jpg" alt="">
+        </div>
+        <div ngClass="description-of-me-container">
             <h3>Who I Am</h3>
-            <div class="description-of-me">
+            <div ngClass="description-of-me">
                 <h2>About me</h2>
                 <span>Hi, I’m a german speaking Frontend Developer based near Passau. Motivated by the limitless
                     opportunities within IT, I am excited about crafting visually captivating and intuitive websites

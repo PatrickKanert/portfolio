@@ -1,8 +1,12 @@
+@import "../../styles.scss";
+
 .skills {
   background: radial-gradient(circle at 0% 50%, #08463b -20%, #1c1c1c 20%);
   display: flex;
   justify-content: center;
-  padding: 0px 100px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 100px 144px 100px;
 }
 
 .content {
@@ -30,6 +34,26 @@ h2 {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #3dcfb6;
+  .part1 {
+    color: #3dcfb6;
+    font-family: "Fira-Code";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .part2 {
+    color: white;
+    font-family: "Fira-Code";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
 }
 
 .technologies {
@@ -46,8 +70,9 @@ h2 {
   border: 1px solid #3dcfb6;
   border-radius: 30px;
   max-width: 600px;
+  height: fit-content;
 
-  span {
+  .skill-description {
     color: white;
     font-family: Karla;
     font-size: 18px;
@@ -58,19 +83,19 @@ h2 {
     text-decoration-skip-ink: none;
   }
 
+  .another-skill-description {
+    color: white;
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
   > div {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    > div {
-      display: flex;
-      gap: 24px;
-      align-items: center;
-      img {
-        width: 32px;
-        height: 32px;
-      }
-    }
+    max-width: 340px;
   }
 }
 
@@ -86,7 +111,14 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
+    > img {
+      transition: transform 0.3s ease; /* Glatte Animation beim Skalieren */
+    }
+
+    > img:hover {
+      transform: scale(1.1); /* Bild um 20% vergrößern */
+    }
 
     > span {
       color: white;

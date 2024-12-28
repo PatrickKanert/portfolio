@@ -27,6 +27,49 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.btn {
+  font-family: "Karla", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  color: white;
+  background-color: transparent;
+  padding: 12px 24px;
+  border-radius: 100px;
+  border: 1px solid white;
+  position: relative;
+  overflow: hidden;
+  transition: border 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    border: 1px solid #6ad7bf;
+
+    span {
+      animation: moveText 2s linear infinite;
+    }
+  }
+
+  span {
+    display: inline-block;
+  }
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  49.99% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 // Fonts //
 
 @font-face {
