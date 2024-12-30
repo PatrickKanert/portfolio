@@ -1,0 +1,31 @@
+{
+  "HEADER": {
+    "ABOUT_ME": "Über mich",
+    "SKILLS": "Fähigkeiten",
+    "PROJECTS": "Projekte"
+  },
+  "LANDING": {
+    "FRONTEND_DEVELOPER": "Frontend Entwickler",
+    "CHECK_WORK": "Sehen Sie sich meine Arbeit an",
+    "CONTACT_ME": "Kontaktieren Sie mich",
+    "BASED_NEAR": "In der Nähe von Passau",
+    "REMOTE_WORK": "Verfügbar für Remote-Arbeit",
+    "OPEN_TO_WORK": "Offen für Arbeit"
+  },
+  "ABOUT_ME": {
+    "WHO_I_AM": "Wer ich bin",
+    "TITLE": "Über mich",
+    "INTRO": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus der Nähe von Passau. Begeistert von den unbegrenzten Möglichkeiten der IT freue ich mich darauf, visuell ansprechende und intuitive Websites und Anwendungen zu gestalten.",
+    "LOCATION": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in der Nähe von Passau als auch remote effektiv arbeiten.",
+    "OPEN_MINDED": "Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten ständig zu verbessern.",
+    "QUALITY": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code, es ist eine kreative Form der Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen umzuwandeln. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+  },
+    "SKILLS": {
+      "TECHNOLOGIES": "Technologien",
+      "SKILL_SET": "Fähigkeiten",
+      "SKILL_DESCRIPTION": "Mein Weg hat mich durch verschiedene Projekte geführt, bei denen ich eine Vielzahl von Frontend-Technologien und Konzepten eingesetzt habe. Ich bin offen dafür, neue Technologien und Methoden zu übernehmen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig wandelnden Welt der Webentwicklung voraus zu sein.",
+      "NEED_ANOTHER_SKILL": "Sie benötigen eine andere Fähigkeit?",
+      "ANOTHER_SKILL_DESCRIPTION": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
+      "LETS_TALK": "Lass uns reden"
+    }
+}

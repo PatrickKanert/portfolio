@@ -2,16 +2,16 @@
     <div ngClass="header">
         <nav>
             <div ngClass="custom-toggle">
-                <input type="checkbox" id="language-toggle" ngClass="toggle-input">
+                <input type="checkbox" id="language-toggle" ngClass="toggle-input" (change)="toggleLanguage($event)" />
                 <label for="language-toggle" ngClass="toggle-label">
                     <span ngClass="toggle-text en">EN</span>
                     <span ngClass="toggle-text de">DE</span>
                     <div ngClass="toggle-thumb"></div>
                 </label>
             </div>
-            <a href="#">About Me</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
+            <a href="#">{{ 'HEADER.ABOUT_ME' | translate }}</a>
+            <a href="#">{{ 'HEADER.SKILLS' | translate }}</a>
+            <a href="#">{{ 'HEADER.PROJECTS' | translate }}</a>
         </nav>
         <div ngClass="logo">
             <img src="assets/img/logo.png" alt="">

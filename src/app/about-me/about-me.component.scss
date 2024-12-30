@@ -38,7 +38,7 @@ h3 {
 }
 
 .image-background.hovered {
-  background-image: repeating-linear-gradient(
+  background: repeating-linear-gradient(
     45deg,
     #08463b,
     #08463b 2px,
@@ -52,9 +52,11 @@ h3 {
   left: 32px;
   bottom: 16px;
   width: 100%;
+  height: auto;
   border-radius: 30px;
   align-self: flex-start;
   height: max-content;
+  object-fit: cover;
 }
 
 .description-of-me-container {

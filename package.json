@@ -12,7 +12,7 @@
   "dependencies": {
     "@angular/animations": "^17.0.0",
     "@angular/cdk": "^17.3.10",
-    "@angular/common": "^17.0.0",
+    "@angular/common": "^17.3.12",
     "@angular/compiler": "^17.0.0",
     "@angular/core": "^17.3.12",
     "@angular/fire": "^17.0.0",
@@ -21,6 +21,10 @@
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/router": "^17.0.0",
+    "@colsen1991/ngx-translate-extract-marker": "^3.0.1",
+    "@ngx-translate/core": "^16.0.4",
+    "@ngx-translate/http-loader": "^16.0.1",
+    "firebase": "^11.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"

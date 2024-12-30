@@ -1,35 +1,23 @@
 <div ngClass="skills">
 
     <div ngClass="content">
-        <h2>Technologies</h2>
-
+        <h2>{{ 'SKILLS.TECHNOLOGIES' | translate }}</h2>
         <div ngClass="technologies">
-
-
             <div ngClass="skill-set">
-                <h1>Skill Set</h1>
-                <span ngClass="skill-description">My journey has involved working on diverse projects, employing a range
-                    of
-                    frontend
-                    technologies
-                    and
-                    concepts. I am open to embracing new technologies and methodologies to Continously enhance my
-                    skills
-                    and
-                    stay ahead in the ever-evolving landscape of web development.</span>
+                <h1>{{ 'SKILLS.SKILL_SET' | translate }}</h1>
+                <span ngClass="skill-description">{{ 'SKILLS.SKILL_DESCRIPTION' | translate }}</span>
                 <div>
-                    <h2><span ngClass="part1">You need </span> <span ngClass="part2">another skill?</span></h2>
-                    <span ngClass="another-skill-description">
-                        Feel free to contact me. I look forward to expanding on my previous knowledge.
-                    </span>
+                    <h2>
+                        <span ngClass="part1">{{ 'SKILLS.NEED_ANOTHER_SKILL' | translate }}</span>
+                    </h2>
+                    <span ngClass="another-skill-description">{{ 'SKILLS.ANOTHER_SKILL_DESCRIPTION' | translate
+                        }}</span>
                 </div>
-
                 <div>
-                    <button class="btn"><span>Let's Talk</span></button>
-
+                    <button class="btn"><span>{{ 'SKILLS.LETS_TALK' | translate }}</span></button>
                 </div>
-
             </div>
+
             <div ngClass="skill-icons">
                 <div>
                     <img src="assets/img/skill-icons/html.png" alt="">

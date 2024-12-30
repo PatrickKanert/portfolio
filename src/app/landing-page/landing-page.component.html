@@ -1,10 +1,14 @@
 <div ngClass="content">
     <div ngClass="intro-section">
-        <h2>Frontend Developer</h2>
+        <h2>{{ 'LANDING.FRONTEND_DEVELOPER' | translate }}</h2>
         <h1>Patrick Kanert</h1>
         <div ngClass="btn-container">
-            <button ngClass="btn"><span>Check my work</span></button>
-            <button ngClass="btn"><span>Contact me</span></button>
+            <button ngClass="btn">
+                <span>{{ 'LANDING.CHECK_WORK' | translate }}</span>
+            </button>
+            <button ngClass="btn">
+                <span>{{ 'LANDING.CONTACT_ME' | translate }}</span>
+            </button>
         </div>
     </div>
 
