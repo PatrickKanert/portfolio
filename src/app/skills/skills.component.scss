@@ -113,11 +113,11 @@ h2 {
     align-items: center;
 
     > img {
-      transition: transform 0.3s ease; /* Glatte Animation beim Skalieren */
+      transition: transform 0.3s ease;
     }
 
     > img:hover {
-      transform: scale(1.1); /* Bild um 20% vergrößern */
+      transform: scale(1.1);
     }
 
     > span {
@@ -135,67 +135,54 @@ h2 {
 }
 
 .growth-mindset-container {
-  position: relative; // Container ist relativ positioniert
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  // img {
-  //   transition: transform 0.3s ease; // Animation für Hover-Effekt am Bild
-  // }
-
-  // img:hover {
-  //   transform: scale(1.1); // Bild vergrößern
-  // }
 
   .tooltip {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 180px;
-    visibility: hidden; // Standardmäßig unsichtbar
-    opacity: 0; // Standardmäßig transparent
-    background-color: white; // Hintergrundfarbe der Sprechblase
-    color: #3dcfb6; // Textfarbe der Sprechblase
-    text-align: center; // Text zentrieren
+    width: 200px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: white;
+    color: #3dcfb6;
+    text-align: center;
     font-size: 10px;
     font-weight: 700;
-    border-radius: 5px; // Abgerundete Ecken
+    border-radius: 5px;
     padding: 8px;
     position: absolute;
-    bottom: 100%; // Position oberhalb des Icons
-    left: 50%; // Zentrierung relativ zum Icon
+    bottom: 100%;
+    left: 50%;
     transform: translateX(-25%);
     z-index: 10;
-    transition: opacity 0.3s ease; // Weiche Animation beim Einblenden
+    transition: opacity 0.3s ease;
     pointer-events: none;
-
 
       img{
         width: 32px;
         height: 32px;
       }
 
-
-
-
     &::after {
       content: '';
       position: absolute;
-      top: 100%; // Pfeil unter der Sprechblase
+      top: 100%;
       left: 25%;
       transform: translateX(-50%);
       border-width: 16px;
       border-style: solid;
-      border-color: white transparent transparent transparent; // Pfeilfarbe passend zur Sprechblase
+      border-color: white transparent transparent transparent;
     }
   }
 
-  // Tooltip nur anzeigen, wenn das img-Element gehovt wird
   img:hover + .tooltip {
-    visibility: visible; // Sichtbar machen
-    opacity: 1; // Transparenz aufheben
+    visibility: visible;
+    opacity: 1;
   }
 }
 

@@ -3,12 +3,12 @@ import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-skills',
+  selector: 'app-my-projects',
   standalone: true,
   imports: [CommonModule, TranslateModule],
-  templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss',
+  templateUrl: './my-projects.component.html',
+  styleUrl: './my-projects.component.scss'
 })
-export class SkillsComponent {
+export class MyProjectsComponent {
 
 }
