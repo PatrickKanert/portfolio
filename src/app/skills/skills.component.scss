@@ -101,8 +101,8 @@ h2 {
 
 .skill-icons {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 72px;
 
   > div {
@@ -131,5 +131,94 @@ h2 {
       text-decoration-skip-ink: none;
       margin-top: 8px;
     }
+  }
+}
+
+.growth-mindset-container {
+  position: relative; // Container ist relativ positioniert
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // img {
+  //   transition: transform 0.3s ease; // Animation für Hover-Effekt am Bild
+  // }
+
+  // img:hover {
+  //   transform: scale(1.1); // Bild vergrößern
+  // }
+
+  .tooltip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    visibility: hidden; // Standardmäßig unsichtbar
+    opacity: 0; // Standardmäßig transparent
+    background-color: white; // Hintergrundfarbe der Sprechblase
+    color: #3dcfb6; // Textfarbe der Sprechblase
+    text-align: center; // Text zentrieren
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 5px; // Abgerundete Ecken
+    padding: 8px;
+    position: absolute;
+    bottom: 100%; // Position oberhalb des Icons
+    left: 50%; // Zentrierung relativ zum Icon
+    transform: translateX(-25%);
+    z-index: 10;
+    transition: opacity 0.3s ease; // Weiche Animation beim Einblenden
+    pointer-events: none;
+
+
+      img{
+        width: 32px;
+        height: 32px;
+      }
+
+
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%; // Pfeil unter der Sprechblase
+      left: 25%;
+      transform: translateX(-50%);
+      border-width: 16px;
+      border-style: solid;
+      border-color: white transparent transparent transparent; // Pfeilfarbe passend zur Sprechblase
+    }
+  }
+
+  // Tooltip nur anzeigen, wenn das img-Element gehovt wird
+  img:hover + .tooltip {
+    visibility: visible; // Sichtbar machen
+    opacity: 1; // Transparenz aufheben
+  }
+}
+
+.tooltip-headline {
+  color: #3dcfb6;
+  font-family: "Fira-Code";
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 16px;
+}
+
+.tooltip-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  div {
+    display: flex;
+    flex-direction: column;
   }
 }
