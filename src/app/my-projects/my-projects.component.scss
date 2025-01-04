@@ -35,6 +35,7 @@ h3 {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  margin: 0;
 
 }
 
@@ -46,13 +47,16 @@ h3 {
   padding: 0px 100px 145px 100px;
 }
 
+.separator {
+  color: #3dcfb6;
+}
+
 .content {
-  // width: -webkit-fill-available;
-  max-width: 1440px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 40px;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
 
     span {
       font-family: "Karla", Arial, Helvetica, sans-serif;
@@ -65,14 +69,28 @@ h3 {
     }
 }
 
-.projects {
+.project-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.projects-wrapper {
   border-top: 1px solid #3DCFB6;
 
+}
+
+.projects {
+
+  display: flex;justify-content: space-between;
+
   .project-info {
+    gap: 220px;
     padding: 40px 32px;
     border-bottom: 1px solid #3DCFB6;
     display: flex;
     justify-content: space-between;
+    transition: background-color 0.3s;
 
       div {
         display: flex;
@@ -80,5 +98,73 @@ h3 {
         align-items: center;
         gap: 4px;
       }
+
+      &:hover {
+        cursor: pointer;
+        background-color: #26524B;
+
+        .custom-icon {
+          opacity: 1;
+          transition: opacity 0.3s ease;
+      }
+    }
+  }
+}
+
+.custom-icon {
+  font-size: 20px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 20px;
+}
+
+
+.project-background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0%);
+
+  &.middle {
+    transform: translateY(calc(50% - 30px));
+  }
+
+  &.bottom {
+    transform: translateY(calc(100% - 65px));
+  }
+
+  img {
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 400px;
+    height: 200px;
+    background-image: repeating-linear-gradient(
+      45deg,
+      #08463b,
+      #08463b 2px,
+      #1c1c1c 1px,
+      #1c1c1c 16px
+    );
+    border-radius: 12px;
+    z-index: 0;
   }
 }

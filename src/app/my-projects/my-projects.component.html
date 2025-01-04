@@ -1,45 +1,35 @@
 <div class="wrapper">
   <div class="content">
-    <div>
-      <h2>Portfolio</h2>
-      <h1>Featured Projects</h1>
+    <div class="project-description-container">
+      <div>
+        <h2>Portfolio</h2>
+        <h1>Featured Projects</h1>
+      </div>
+      <span>Explore a selection of my work here - Interact with <br> projects to see my skills in action.</span>
     </div>
-    <span>Explore a selection of my work here - Interact with <br> projects to see my skills in action.</span>
     <div class="projects">
-      <div class="project-info">
-        <h3>Join</h3>
-        <div>
-          <span>HTML</span>
-          <span [ngStyle]="{ color: '#3DCFB6' }">|</span>
-          <span>CSS</span>
-          <span [ngStyle]="{ color: '#3DCFB6' }">|</span>
-          <span>JavaScript</span>
-          <span [ngStyle]="{ color: '#3DCFB6' }">|</span>
-          <span>Firebase</span>
-        </div>
-
-      </div>
-      <div class="project-info">
-        <h3>El Pollo Loco</h3>
-        <div>
-          <span>HMTL</span>
-          <span [ngStyle]="{ color: '#3DCFB6' }">|</span>
-          <span>CSS</span>
-          <span [ngStyle]="{ color: '#3DCFB6' }">|</span>
-          <span>JavaScript</span>
+      <div class="projects-wrapper">
+        <div class="project-info" *ngFor="let project of projects" (mouseenter)="setActiveProject(project.id)"
+          (mouseleave)="setActiveProject(null)">
+          <div>
+            <h3>{{ project.title }}</h3>
+            <mat-icon class="custom-icon" aria-hidden="false" aria-label="Call made icon"
+              fontIcon="call_made"></mat-icon>
+          </div>
+          <div>
+            <span *ngFor="let tech of project.technologies; let isLast = last">
+              {{ tech }}
+              <span *ngIf="!isLast" [ngStyle]="{ color: '#3DCFB6' }"> | </span>
+            </span>
+          </div>
         </div>
       </div>
-      <div class="project-info">
-        <h3>Pokédex</h3>
-        <div>
-          <span>HMTL</span>
-          <span [ngStyle]="{ color: '#3DCFB6' }">|</span>
-          <span>CSS</span>
-          <span [ngStyle]="{ color: '#3DCFB6' }">|</span>
-          <span>JavaScript</span>
-          <span [ngStyle]="{ color: '#3DCFB6' }">|</span>
-          <span>Rest-Api</span>
-        </div>
+      <div class="project-container" [ngSwitch]="activeProject">
+        <ng-container *ngFor="let project of projects">
+          <div class="project-background" [ngClass]="project.customClass" *ngSwitchCase="project.id">
+            <img [src]="project.image" [alt]="project.title + ' Project'" />
+          </div>
+        </ng-container>
       </div>
     </div>
   </div>

@@ -1,5 +1,4 @@
 <div ngClass="skills">
-
   <div ngClass="content">
     <h2>{{ 'SKILLS.TECHNOLOGIES' | translate }}</h2>
     <div ngClass="technologies">
@@ -17,47 +16,10 @@
           <button class="btn"><span>{{ 'SKILLS.LETS_TALK' | translate }}</span></button>
         </div>
       </div>
-
-      <div ngClass="skill-icons">
-        <div>
-          <img src="assets/img/skill-icons/html.png" alt="">
-          <span>HTML</span>
-        </div>
-        <div>
-          <img src="assets/img/skill-icons/css.png" alt="">
-          <span>CSS</span>
-        </div>
-        <div>
-          <img src="assets/img/skill-icons/js.png" alt="">
-          <span>JavaScript</span>
-        </div>
-        <div>
-          <img src="assets/img/skill-icons/material-design.png" alt="">
-          <span>Material <br> Design</span>
-        </div>
-        <div>
-          <img src="assets/img/skill-icons/ts.png" alt="">
-          <span>TypeScript</span>
-        </div>
-        <div>
-          <img src="assets/img/skill-icons/angular.png" alt="">
-          <span>Angular</span>
-        </div>
-        <div>
-          <img src="assets/img/skill-icons/firebase.png" alt="">
-          <span>Firebase</span>
-        </div>
-        <div>
-          <img src="assets/img/skill-icons/git.png" alt="">
-          <span>GIT</span>
-        </div>
-        <div>
-          <img src="assets/img/skill-icons/api.png" alt="">
-          <span>Rest-Api</span>
-        </div>
-        <div>
-          <img src="assets/img/skill-icons/scrum.png" alt="">
-          <span>Scrum</span>
+      <div class="skill-icons">
+        <div *ngFor="let skill of skills">
+          <img [src]="skill.icon" [alt]="skill.name">
+          <span>{{ skill.name }}</span>
         </div>
         <div class="growth-mindset-container">
           <img src="assets/img/skill-icons/growth-mindset.png" alt="Growth Mindset Icon">
@@ -66,19 +28,14 @@
               <span>{{ 'SKILLS.IM_INTERESTED' | translate }}</span>
             </div>
             <div class="tooltip-content">
-              <div>
-                <img src="assets/img/skill-icons/react-icon.svg" alt="">
-                <span>React</span>
-              </div>
-              <div>
-                <img src="assets/img/skill-icons/vue.svg" alt="">
-                <span>Vue Js</span>
+              <div *ngFor="let interestedSkill of interestedSkills">
+                <img [src]="interestedSkill.icon" [alt]="interestedSkill.name">
+                <span>{{ interestedSkill.name }}</span>
               </div>
             </div>
           </div>
           <span>Growth <br> mindset</span>
         </div>
-
       </div>
     </div>
   </div>

@@ -1,71 +1,65 @@
 <div ngClass="content">
-    <div ngClass="intro-section">
-        <h2>{{ 'LANDING.FRONTEND_DEVELOPER' | translate }}</h2>
-        <h1>Patrick Kanert</h1>
-        <div ngClass="btn-container">
-            <button ngClass="btn">
-                <span>{{ 'LANDING.CHECK_WORK' | translate }}</span>
-            </button>
-            <button ngClass="btn">
-                <span>{{ 'LANDING.CONTACT_ME' | translate }}</span>
-            </button>
-        </div>
+  <div ngClass="intro-section">
+    <h2>{{ 'LANDING.FRONTEND_DEVELOPER' | translate }}</h2>
+    <h1>Patrick Kanert</h1>
+    <div ngClass="btn-container">
+      <button ngClass="btn">
+        <span>{{ 'LANDING.CHECK_WORK' | translate }}</span>
+      </button>
+      <button ngClass="btn">
+        <span>{{ 'LANDING.CONTACT_ME' | translate }}</span>
+      </button>
     </div>
-
-    <div ngClass="info-carousel">
-        <ul>
-            <li *ngFor="let item of sliderItems">
-                {{ item }}
-                <span ngClass="dot">·</span>
-            </li>
-            <li *ngFor="let item of sliderItems">
-                {{ item }}
-                <span ngClass="dot">·</span>
-            </li>
-            <li *ngFor="let item of sliderItems">
-                {{ item }}
-                <span ngClass="dot">·</span>
-            </li>
-
-        </ul>
-
-        <ul aria-hidden="true">
-            <li *ngFor="let item of sliderItems">
-                {{ item }}
-                <span ngClass="dot">·</span>
-            </li>
-            <li *ngFor="let item of sliderItems">
-                {{ item }}
-                <span ngClass="dot">·</span>
-            </li>
-            <li *ngFor="let item of sliderItems">
-                {{ item }}
-                <span ngClass="dot">·</span>
-            </li>
-        </ul>
+  </div>
+  <div ngClass="info-carousel">
+    <ul>
+      <li *ngFor="let item of sliderItems">
+        {{ item }}
+        <span ngClass="dot">·</span>
+      </li>
+      <li *ngFor="let item of sliderItems">
+        {{ item }}
+        <span ngClass="dot">·</span>
+      </li>
+      <li *ngFor="let item of sliderItems">
+        {{ item }}
+        <span ngClass="dot">·</span>
+      </li>
+    </ul>
+    <ul aria-hidden="true">
+      <li *ngFor="let item of sliderItems">
+        {{ item }}
+        <span ngClass="dot">·</span>
+      </li>
+      <li *ngFor="let item of sliderItems">
+        {{ item }}
+        <span ngClass="dot">·</span>
+      </li>
+      <li *ngFor="let item of sliderItems">
+        {{ item }}
+        <span ngClass="dot">·</span>
+      </li>
+    </ul>
+  </div>
+  <div ngClass="info-container">
+    <div ngClass="scroll">
+      <div ngClass="arrow-frame">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="16" height="16">
+          <path style="fill:#ffffff"
+            d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z" />
+        </svg>
+      </div>
+      <div ngClass="placeholder-line-scroll"></div>
     </div>
-
-    <div ngClass="info-container">
-        <div ngClass="scroll">
-            <div ngClass="arrow-frame">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="16" height="16">
-                    <path style="fill:#ffffff"
-                        d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z" />
-                </svg>
-            </div>
-            <div ngClass="placeholder-line-scroll"></div>
-        </div>
-
-        <div ngClass="social-media">
-            <a ngClass="flip-email" href="mailto:patrickkanert@gmail.com">patrickkanert&#64;gmail.com</a>
-            <a ngClass="icon" href="https://github.com/PatrickKanert" target="_blank" rel="noopener noreferrer">
-                <img src="assets/img/social-media-icons/github.png" alt="">
-            </a>
-            <a ngClass="icon" href="" target="_blank" rel="noopener noreferrer">
-                <img src="assets/img/social-media-icons/linkedin.png" alt="">
-            </a>
-            <div ngClass="placeholder-line-social-media"></div>
-        </div>
+    <div ngClass="social-media">
+      <a ngClass="flip-email" href="mailto:patrickkanert@gmail.com">patrickkanert&#64;gmail.com</a>
+      <a ngClass="icon" href="https://github.com/PatrickKanert" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/social-media-icons/github.png" alt="">
+      </a>
+      <a ngClass="icon" href="" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/social-media-icons/linkedin.png" alt="">
+      </a>
+      <div ngClass="placeholder-line-social-media"></div>
     </div>
-
+  </div>
 </div>
