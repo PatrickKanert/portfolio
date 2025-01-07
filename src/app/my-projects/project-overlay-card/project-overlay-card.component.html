@@ -1,0 +1,30 @@
+<div class="overlay" *ngIf="project">
+
+  <mat-icon (click)="closeOverlay()" class="close-button" aria-hidden="false" aria-label="Close"
+    fontIcon="close"></mat-icon>
+
+  <div class="description-container">
+    <div class="project-title">
+      <h1>0{{ project.index }}</h1>
+      <h2>{{ project.title }}</h2>
+    </div>
+
+    <div>
+      <h3>What is this project about?</h3>
+      <span class="description-text">{{ project.description }}</span>
+    </div>
+    <div class="project-tech">
+      <ng-container *ngFor="let tech of project.technologies">
+        <div>
+          <img class="tech-img" [src]="tech.imgUrl" [alt]="tech.name" />
+          {{ tech.name }}
+        </div>
+      </ng-container>
+    </div>
+
+
+  </div>
+  <div>
+    <img class="project-img" [src]="project.image" [alt]="project.title + ' Image'" />
+  </div>
+</div>

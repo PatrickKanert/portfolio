@@ -9,8 +9,8 @@
     </div>
     <div class="projects">
       <div class="projects-wrapper">
-        <div class="project-info" *ngFor="let project of projects" (mouseenter)="setActiveProject(project.id)"
-          (mouseleave)="setActiveProject(null)">
+        <div class="project-info" *ngFor="let project of projects" (mouseenter)="setHoveredProject(project.id)"
+          (mouseleave)="setHoveredProject(null)" (click)="setActiveProject(project.id)">
           <div>
             <h3>{{ project.title }}</h3>
             <mat-icon class="custom-icon" aria-hidden="false" aria-label="Call made icon"
@@ -18,19 +18,24 @@
           </div>
           <div>
             <span *ngFor="let tech of project.technologies; let isLast = last">
-              {{ tech }}
+              {{ tech.name }}
               <span *ngIf="!isLast" [ngStyle]="{ color: '#3DCFB6' }"> | </span>
             </span>
           </div>
         </div>
       </div>
-      <div class="project-container" [ngSwitch]="activeProject">
+      <div class="project-container" *ngIf="hoveredProject" [ngSwitch]="hoveredProject">
         <div *ngFor="let project of projects">
           <div class="project-background" [ngClass]="project.customClass" *ngSwitchCase="project.id">
             <img [src]="project.image" [alt]="project.title + ' Project'" />
           </div>
         </div>
       </div>
+
     </div>
   </div>
+  <app-project-overlay-card *ngIf="activeProject" [project]="getActiveProject()" (close)="setActiveProject(null)">
+  </app-project-overlay-card>
+
+
 </div>
