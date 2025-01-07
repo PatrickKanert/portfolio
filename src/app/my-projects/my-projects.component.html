@@ -25,11 +25,11 @@
         </div>
       </div>
       <div class="project-container" [ngSwitch]="activeProject">
-        <ng-container *ngFor="let project of projects">
+        <div *ngFor="let project of projects">
           <div class="project-background" [ngClass]="project.customClass" *ngSwitchCase="project.id">
             <img [src]="project.image" [alt]="project.title + ' Project'" />
           </div>
-        </ng-container>
+        </div>
       </div>
     </div>
   </div>
