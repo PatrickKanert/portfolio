@@ -33,6 +33,8 @@ export class MyProjectsComponent {
       ],
       image: 'assets/img/projects/join.png',
       customClass: 'top',
+      githubUrl: 'https://github.com/Patrick-Gogolin/JOIN',
+      liveTestUrl: '#',
     },
     {
       id: 'el-pollo-loco',
@@ -46,6 +48,8 @@ export class MyProjectsComponent {
       ],
       image: 'assets/img/projects/el-pollo-loco.png',
       customClass: 'middle',
+      githubUrl: 'https://github.com/PatrickKanert/ElPoloLoco',
+      liveTestUrl: '#',
     },
     {
       id: 'da-bubble',
@@ -59,10 +63,12 @@ export class MyProjectsComponent {
       ],
       image: 'assets/img/projects/da-bubble.png',
       customClass: 'bottom',
+      githubUrl: '#',
+      liveTestUrl: '#',
     },
   ];
 
- hoveredProject: string | null = null;
+  hoveredProject: string | null = null;
   activeProject: string | null = null;
 
   setHoveredProject(projectId: string | null): void {

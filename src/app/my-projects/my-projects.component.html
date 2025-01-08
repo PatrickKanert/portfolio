@@ -34,7 +34,8 @@
 
     </div>
   </div>
-  <app-project-overlay-card *ngIf="activeProject" [project]="getActiveProject()" (close)="setActiveProject(null)">
+  <app-project-overlay-card *ngIf="activeProject" [project]="getActiveProject()" (close)="setActiveProject(null)"
+    [projects]="projects">
   </app-project-overlay-card>
 
 

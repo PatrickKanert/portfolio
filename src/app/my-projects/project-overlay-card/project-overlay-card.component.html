@@ -21,10 +21,29 @@
         </div>
       </ng-container>
     </div>
-
-
+    <div class="project-btn-container">
+      <a [href]="project.githubUrl" target="_blank" rel="noopener noreferrer">
+        <button class="btn">
+          <span>GitHub</span>
+          <mat-icon class="custom-icon" aria-hidden="false" aria-label="Call made icon" fontIcon="call_made"></mat-icon>
+        </button>
+      </a>
+      <a [href]="project.liveTestUrl" target="_blank" rel="noopener noreferrer">
+        <button class="btn">
+          <span>Live Test</span>
+          <mat-icon class="custom-icon" aria-hidden="false" aria-label="Call made icon" fontIcon="call_made"></mat-icon>
+        </button>
+      </a>
+    </div>
   </div>
   <div>
     <img class="project-img" [src]="project.image" [alt]="project.title + ' Image'" />
   </div>
+
+  <button class="next-project-btn" (click)="nextProject()">
+    <span>Next project</span>
+    <mat-icon class="arrow-forward-icon" aria-hidden="false" aria-label="Arrow forward"
+      fontIcon="arrow_forward"></mat-icon>
+  </button>
+
 </div>

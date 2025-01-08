@@ -13,6 +13,7 @@ import { Project } from '../../models/project.model';
 })
 export class ProjectOverlayCardComponent {
   @Input() project?: Project;
+  @Input() projects: Project[] = [];
 
   @Output() close = new EventEmitter<void>();
 
@@ -20,5 +21,12 @@ export class ProjectOverlayCardComponent {
     this.close.emit();
   }
 
+  nextProject(): void {
+    if (!this.project || this.projects.length === 0) return;
+
+    const currentIndex = this.projects.findIndex(p => p.id === this.project?.id);
+    const nextIndex = (currentIndex + 1) % this.projects.length;
+    this.project = this.projects[nextIndex];
+  }
 
 }
