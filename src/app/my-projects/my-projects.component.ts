@@ -2,10 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { TranslateModule } from '@ngx-translate/core';
-import { Project } from '../models/project.model';
+import type { Project } from '../models/project.model';
 import { ProjectOverlayCardComponent } from './project-overlay-card/project-overlay-card.component';
-
-
 
 @Component({
   selector: 'app-my-projects',
@@ -15,10 +13,7 @@ import { ProjectOverlayCardComponent } from './project-overlay-card/project-over
   styleUrl: './my-projects.component.scss'
 })
 
-
-
 export class MyProjectsComponent {
-
   projects: Project[] = [
     {
       id: 'join',
@@ -82,6 +77,4 @@ export class MyProjectsComponent {
   getActiveProject(): Project | undefined {
     return this.projects.find((p) => p.id === this.activeProject);
   }
-
-
 }

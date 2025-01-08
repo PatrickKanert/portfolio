@@ -12,7 +12,6 @@ import { TranslateModule } from '@ngx-translate/core';
 export class AboutMeComponent {
   isHovered = false;
 
-
   onMouseEnter() {
     this.isHovered = true;
   }

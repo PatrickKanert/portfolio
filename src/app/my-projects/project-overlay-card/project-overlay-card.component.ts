@@ -1,8 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { Project } from '../../models/project.model';
-
+import type { Project } from '../../models/project.model';
 
 @Component({
   selector: 'app-project-overlay-card',
@@ -11,6 +10,7 @@ import { Project } from '../../models/project.model';
   templateUrl: './project-overlay-card.component.html',
   styleUrl: './project-overlay-card.component.scss',
 })
+
 export class ProjectOverlayCardComponent {
   @Input() project?: Project;
   @Input() projects: Project[] = [];
@@ -28,5 +28,4 @@ export class ProjectOverlayCardComponent {
     const nextIndex = (currentIndex + 1) % this.projects.length;
     this.project = this.projects[nextIndex];
   }
-
 }

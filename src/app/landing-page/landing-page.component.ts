@@ -14,7 +14,6 @@ export class LandingPageComponent {
 
   constructor(private translate: TranslateService) {
     this.updateSliderItems();
-    // Aktualisiere die Inhalte, wenn die Sprache geändert wird
     this.translate.onLangChange.subscribe(() => this.updateSliderItems());
   }
 

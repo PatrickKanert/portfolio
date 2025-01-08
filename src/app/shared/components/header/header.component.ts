@@ -16,7 +16,6 @@ export class HeaderComponent {
     this.translate.setDefaultLang('en');
   }
 
-  // Sprache umschalten
   toggleLanguage(event: Event) {
     const checked = (event.target as HTMLInputElement).checked;
     this.translate.use(checked ? 'de' : 'en'); // Sprache umschalten
