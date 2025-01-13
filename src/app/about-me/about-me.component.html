@@ -1,29 +1,28 @@
 <div ngClass="wrapper">
-    <div ngClass="content">
-        <div [ngClass]="{'image-background': true, 'hovered': isHovered}" (mouseenter)="onMouseEnter()"
-            (mouseleave)="onMouseLeave()">
-            <img src="assets/img/me.jpg" alt="">
-        </div>
-        <div ngClass="description-of-me-container">
-            <h3>{{ 'ABOUT_ME.WHO_I_AM' | translate }}</h3>
-            <div ngClass="description-of-me">
-                <h2>{{ 'ABOUT_ME.TITLE' | translate }}</h2>
-                <span>{{ 'ABOUT_ME.INTRO' | translate }}</span>
-                <div>
-                    <div>
-                        <img src="assets/img/icons/location.png" alt="">
-                        <span>{{ 'ABOUT_ME.LOCATION' | translate }}</span>
-                    </div>
-                    <div>
-                        <img src="assets/img/icons/cognition.png" alt="">
-                        <span>{{ 'ABOUT_ME.OPEN_MINDED' | translate }}</span>
-                    </div>
-                    <div>
-                        <img src="assets/img/icons/quality.png" alt="">
-                        <span>{{ 'ABOUT_ME.QUALITY' | translate }}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div ngClass="content">
+    <div class="image-background">
+      <img src="assets/img/me.jpg" alt="">
     </div>
+    <div ngClass="description-of-me-container">
+      <h3>{{ 'ABOUT_ME.WHO_I_AM' | translate }}</h3>
+      <div ngClass="description-of-me">
+        <h2>{{ 'ABOUT_ME.TITLE' | translate }}</h2>
+        <span>{{ 'ABOUT_ME.INTRO' | translate }}</span>
+        <div>
+          <div>
+            <img src="assets/img/icons/location.png" alt="">
+            <span>{{ 'ABOUT_ME.LOCATION' | translate }}</span>
+          </div>
+          <div>
+            <img src="assets/img/icons/cognition.png" alt="">
+            <span>{{ 'ABOUT_ME.OPEN_MINDED' | translate }}</span>
+          </div>
+          <div>
+            <img src="assets/img/icons/quality.png" alt="">
+            <span>{{ 'ABOUT_ME.QUALITY' | translate }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

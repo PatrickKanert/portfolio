@@ -34,26 +34,21 @@ h2 {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #3dcfb6;
-  .part1 {
-    color: #3dcfb6;
-    font-family: "Fira-Code";
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.8px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+}
+
+.higliht-text {
+  color: #3dcfb6;
+  font-family: "Fira-Code";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
   }
-  .part2 {
-    color: white;
-    font-family: "Fira-Code";
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.8px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
+
+.highlight-text-white {
+  color: white;
 }
 
 .technologies {

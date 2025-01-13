@@ -1,0 +1,64 @@
+<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+  <div class="form-row">
+    <label for="name">{{ "contactForm.nameLabel" | translate }}</label>
+    <input autocomplete="name" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+      [placeholder]="
+        !name.valid && name.touched
+          ? ('contactForm.nameError' | translate)
+          : ('contactForm.namePlaceholder' | translate)
+      " required />
+  </div>
+
+  <div class="form-row">
+    <label for="email">{{ "contactForm.emailLabel" | translate }}</label>
+    <input autocomplete="email" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+      [placeholder]="
+        !email.valid && email.touched
+          ? ('contactForm.emailError' | translate)
+          : ('contactForm.emailPlaceholder' | translate)
+      " required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" (focus)="emailFocused.set(true)"
+      (blur)="emailFocused.set(false)" />
+    @if(email.touched && email.value && !emailFocused() && email.errors?.['pattern']) {
+    <div class="error">
+      {{ "contactForm.emailInvalid" | translate }}
+    </div>
+    }
+  </div>
+
+  <div class="form-row border-bottom">
+    <label for="message">{{ "contactForm.messageLabel" | translate }}</label>
+    <textarea autocomplete="off" #message="ngModel" rows="1" [(ngModel)]="contactData.message" id="message"
+      name="subject" [placeholder]="
+        !message.valid && message.touched
+          ? ('contactForm.messageError' | translate)
+          : ('contactForm.messagePlaceholder' | translate)
+      " required></textarea>
+  </div>
+
+  <div class="checkbox">
+    <mat-checkbox [(ngModel)]="privacyPolicyChecked" name="privacyPolicy" required>
+      {{ "contactForm.privacyPolicy1" | translate }}
+      <a routerLink="/privacy-policy">
+        {{ "contactForm.privacyPolicy2" | translate }}
+      </a>
+      {{ "contactForm.privacyPolicy3" | translate }}
+    </mat-checkbox>
+  </div>
+
+  @if(!privacyPolicyChecked && formSubmitted()) {
+  <span class="error">
+    {{ "contactForm.privacyPolicyError" | translate }}
+  </span>
+  }
+  <button class="submit-btn" [class.form-valid]="contactForm.valid" [disabled]="!contactForm.valid" type="submit">
+    <span>{{ "contactForm.submitBtn" | translate }}</span>
+  </button>
+</form>
+@if(formSubmitted()){
+<div class="overlay">
+  <div class="success-dialog">
+    {{ "contactForm.successMessage" | translate }}
+    <button class="button" (click)="closeDialog()">Ok</button>
+  </div>
+</div>
+}

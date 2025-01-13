@@ -1,3 +1,15 @@
+@use '@angular/material' as mat; // Muss vor allem anderen stehen
+
+$primary: mat.define-palette(mat.$cyan-palette);
+$accent: mat.define-palette(mat.$pink-palette);
+$theme: mat.define-light-theme((
+  color: (
+    primary: $primary,
+    accent: $accent,
+  )
+));
+
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +19,9 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  background-color: #1c1c1c;
+  scrollbar-width: thin;
+  scrollbar-color: #3DCFB6 #1c1c1c;
 }
 
 app-landing-page {
@@ -16,6 +31,12 @@ app-landing-page {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+}
+
+app-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 html,
@@ -80,4 +101,30 @@ body {
 @font-face {
   font-family: "Karla";
   src: url(assets/fonts/Karla/Karla-VariableFont_wght.ttf);
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1c1c;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3DCFB6;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6ad7bf;
+}
+
+::-webkit-scrollbar-corner {
+  background: #1c1c1c;
 }

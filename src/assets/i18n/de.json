@@ -24,7 +24,8 @@
       "TECHNOLOGIES": "Technologien",
       "SKILL_SET": "Fähigkeiten",
       "SKILL_DESCRIPTION": "Mein Weg hat mich durch verschiedene Projekte geführt, bei denen ich eine Vielzahl von Frontend-Technologien und Konzepten eingesetzt habe. Ich bin offen dafür, neue Technologien und Methoden zu übernehmen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig wandelnden Welt der Webentwicklung voraus zu sein.",
-      "NEED_ANOTHER_SKILL": "Sie benötigen eine andere Fähigkeit?",
+      "NEED_ANOTHER_SKILL": "Sie benötigen",
+      "NEED_ANOTHER_SKILL_PART2": "weitere Fähigkeiten?",
       "ANOTHER_SKILL_DESCRIPTION": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
       "LETS_TALK": "Lass uns reden",
       "IM_INTERESTED": "Ich habe ein besonderes Interesse am Lernen von"
@@ -41,5 +42,23 @@
         "EL_POLLO_LOCO": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
         "DA_BUBBLE": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation mit intuitiver Benutzeroberfläche, Echtzeit-Nachrichten und robusten Kanälen."
       }
-    }
+    },
+    "contactForm": {
+    "nameLabel": "Name",
+    "namePlaceholder": "Geben Sie Ihren Namen ein",
+    "nameError": "Name ist erforderlich",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "emailError": "E-Mail ist erforderlich",
+    "emailInvalid": "Ungültige E-Mail-Adresse",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Geben Sie Ihre Nachricht ein",
+    "messageError": "Nachricht ist erforderlich",
+    "privacyPolicy1": "Ich habe die",
+    "privacyPolicy2": "Datenschutzerklärung",
+    "privacyPolicy3": "gelesen und akzeptiere sie.",
+    "privacyPolicyError": "Bitte akzeptieren Sie die Datenschutzerklärung.",
+    "submitBtn": "Absenden",
+    "successMessage": "Ihre Nachricht wurde erfolgreich gesendet. Vielen Dank!"
+  }
   }

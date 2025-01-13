@@ -35,11 +35,6 @@ h3 {
   max-width: 368px;
   max-height: 488px;
   border-radius: 30px;
-  background-image: none;
-  transition: background-image 3s ease-in;
-}
-
-.image-background.hovered {
   background-image: repeating-linear-gradient(
     45deg,
     #08463b,

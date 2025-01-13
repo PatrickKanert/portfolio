@@ -1,0 +1,157 @@
+@import "../../../styles.scss";
+
+// :host {
+//   width: 100%;
+//   @include respond-to('lg') {
+//     width: 50%;
+//   }
+// }
+
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #3DCFB6;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin-top: 32px;
+
+  mat-checkbox {
+    font-size: 15px;
+    color: #ffffff;
+
+    .mat-checkbox-background {
+      background-color: transparent;
+      border: 2px solid #3dcfb6;
+    }
+
+    .mat-checkbox-checked .mat-checkbox-background {
+      background-color: #3dcfb6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #3dcfb6;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  padding: 24px 16px;
+  border-top: 1px solid #3DCFB6;
+  &:hover input::placeholder,
+  &:hover textarea::placeholder {
+    color: #fff;
+  }
+  input,
+  textarea {
+    width: 100%;
+    border-style: none;
+    background: none;
+    font-family: "Karla";
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    resize: none;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: #3DCFB6;
+    }
+    &:invalid.ng-touched::placeholder {
+      color: #C36868;
+    }
+  }
+  label {
+    font-family: "Fira-Code";
+    font-size: 24px;
+    font-weight: 500;
+    color: #3DCFB6;
+  }
+}
+
+.error {
+  color: #C36868;
+  display: block;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.success-dialog {
+  padding: 64px;
+  border-radius: 24px;
+  border: 1px solid #3DCFB6;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  button {
+    width: 20%;
+  }
+}
+
+.submit-btn {
+  min-width: 30%;
+  margin-top: 32px;
+  border: 1px solid #3DCFB6;
+  border-radius: 100px;
+  padding: 16px;
+  background: none;
+  color: white;
+  align-self: center;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:not(:disabled) span {
+    display: inline-block;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    border-color: gray;
+    color: gray;
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.mat-mdc-checkbox-ripple, .mdc-checkbox__ripple {
+  display: none
+}
+
+.mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate~.mdc-checkbox__background, .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate=true]:enabled~.mdc-checkbox__background {
+  background-color: #3dcfbb !important;
+  border-color: #3dcfb6 !important;
+}

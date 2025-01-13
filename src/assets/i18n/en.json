@@ -24,7 +24,8 @@
       "TECHNOLOGIES": "Technologies",
       "SKILL_SET": "Skill Set",
       "SKILL_DESCRIPTION": "My journey has involved working on diverse projects, employing a range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to continuously enhance my skills and stay ahead in the ever-evolving landscape of web development.",
-      "NEED_ANOTHER_SKILL": "You need another skill?",
+      "NEED_ANOTHER_SKILL": "You need",
+      "NEED_ANOTHER_SKILL_PART2": "another skill?",
       "ANOTHER_SKILL_DESCRIPTION": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
       "LETS_TALK": "Let's Talk",
       "IM_INTERESTED": "I have a speacial interest in learning"
@@ -41,5 +42,23 @@
         "EL_POLLO_LOCO": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
         "DA_BUBBLE": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
       }
-    }
+    },
+      "contactForm": {
+        "nameLabel": "What's your name?",
+        "namePlaceholder": "Your name goes here",
+        "nameError": "Oops! it seems your name is missing",
+        "emailLabel": "What's your email?",
+        "emailPlaceholder": "youremail@email.com",
+        "emailError": "Hoppla! your email is required",
+        "emailInvalid": "Please enter a valid email format.",
+        "messageLabel": "How can I help you?",
+        "messagePlaceholder": "Enter a message...",
+        "messageError": "What do you need to develop?",
+        "privacyPolicy1": "I've read the",
+        "privacyPolicy2": "privacy policy",
+        "privacyPolicy3": " and agree to the processing of my data as outlined. ",
+        "privacyPolicyError": "Please accept the privacy policy.",
+        "submitBtn": "Submit",
+        "successMessage": "Your message has been successfully sent. Thank you!"
+      }
 }
