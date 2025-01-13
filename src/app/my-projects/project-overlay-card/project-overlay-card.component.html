@@ -7,9 +7,12 @@
       <h2>{{ project.title }}</h2>
     </div>
     <div>
-      <h3>What is this project about?</h3>
-      <span class="description-text">{{ project.description }}</span>
+      <h3>{{ 'PROJECT.ABOUT' | translate }}</h3>
+      <span class="description-text">
+        {{ 'PROJECT.DESCRIPTION.' + project.id.toUpperCase() | translate }}
+      </span>
     </div>
+
     <div class="project-tech">
       <ng-container *ngFor="let tech of project.technologies">
         <div>

@@ -2,10 +2,10 @@
   <div class="content">
     <div class="project-description-container">
       <div>
-        <h2>Portfolio</h2>
-        <h1>Featured Projects</h1>
+        <h2>{{ 'PORTFOLIO.TITLE' | translate }}</h2>
+        <h1>{{ 'PORTFOLIO.FEATURED_PROJECTS' | translate }}</h1>
       </div>
-      <span>Explore a selection of my work here - Interact with <br> projects to see my skills in action.</span>
+      <span>{{ 'PORTFOLIO.EXPLORE' | translate }}</span>
     </div>
     <div class="projects">
       <div class="projects-wrapper">
@@ -34,7 +34,8 @@
 
     </div>
   </div>
-  <app-project-overlay-card *ngIf="activeProject" [project]="getActiveProject()" (close)="setActiveProject(null)"
-    [projects]="projects">
+  <app-project-overlay-card *ngIf="activeProject" [project]="getActiveProject()" [projects]="projects"
+    (close)="setActiveProject(null)" (next)="nextProject()">
   </app-project-overlay-card>
+
 </div>

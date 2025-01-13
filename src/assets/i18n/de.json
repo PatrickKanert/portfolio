@@ -28,5 +28,18 @@
       "ANOTHER_SKILL_DESCRIPTION": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
       "LETS_TALK": "Lass uns reden",
       "IM_INTERESTED": "Ich habe ein besonderes Interesse am Lernen von"
+    },
+    "PORTFOLIO": {
+      "TITLE": "Portfolio",
+      "FEATURED_PROJECTS": "Vorgestellte Projekte",
+      "EXPLORE": "Entdecke eine Auswahl meiner Arbeiten hier - Interagiere mit Projekten, um meine Fähigkeiten in Aktion zu sehen."
+    },
+    "PROJECT": {
+      "ABOUT": "Worum geht es in diesem Projekt?",
+      "DESCRIPTION": {
+        "JOIN": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+        "EL_POLLO_LOCO": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+        "DA_BUBBLE": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation mit intuitiver Benutzeroberfläche, Echtzeit-Nachrichten und robusten Kanälen."
+      }
     }
-}
+  }

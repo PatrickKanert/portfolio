@@ -32,7 +32,7 @@ export class MyProjectsComponent {
       liveTestUrl: '#',
     },
     {
-      id: 'el-pollo-loco',
+      id: 'el_pollo_loco',
       index: 2,
       title: 'El Pollo Loco',
       description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
@@ -47,7 +47,7 @@ export class MyProjectsComponent {
       liveTestUrl: '#',
     },
     {
-      id: 'da-bubble',
+      id: 'da_bubble',
       index: 3,
       title: 'DA Bubble',
       description: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
@@ -72,9 +72,26 @@ export class MyProjectsComponent {
 
   setActiveProject(projectId: string | null): void {
     this.activeProject = projectId;
+    if (projectId) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
   }
 
   getActiveProject(): Project | undefined {
-    return this.projects.find((p) => p.id === this.activeProject);
+    const active = this.projects.find((p) => p.id === this.activeProject);
+    return active;
+  }
+
+  nextProject(): void {
+    if (!this.activeProject) {
+      this.activeProject = this.projects[0].id;
+      return;
+    }
+
+    const currentIndex = this.projects.findIndex((p) => p.id === this.activeProject);
+    const nextIndex = (currentIndex + 1) % this.projects.length;
+    this.activeProject = this.projects[nextIndex].id;
   }
 }

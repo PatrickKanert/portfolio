@@ -28,5 +28,18 @@
       "ANOTHER_SKILL_DESCRIPTION": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
       "LETS_TALK": "Let's Talk",
       "IM_INTERESTED": "I have a speacial interest in learning"
+    },
+    "PORTFOLIO": {
+      "TITLE": "Portfolio",
+      "FEATURED_PROJECTS": "Featured Projects",
+      "EXPLORE": "Explore a selection of my work here - Interact with projects to see my skills in action."
+    },
+    "PROJECT": {
+      "ABOUT": "What is this project about?",
+      "DESCRIPTION": {
+        "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "EL_POLLO_LOCO": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "DA_BUBBLE": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+      }
     }
 }
