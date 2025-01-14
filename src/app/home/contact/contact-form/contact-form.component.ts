@@ -4,7 +4,7 @@ import { FormsModule, NgForm } from "@angular/forms";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { RouterLink } from "@angular/router";
 import { TranslatePipe } from "@ngx-translate/core";
-import type { ContactData } from "../../models/contact.model";
+import type { ContactData } from "../../../models/contact.model";
 
 @Component({
 	selector: "app-contact-form",
@@ -27,7 +27,7 @@ export class ContactFormComponent {
 	};
 
 	post = {
-		endPoint: "https://deineDomain.de/sendMail.php",
+		endPoint: "https://patrick-kanert.com/sendMail.php",
 		body: (payload: ContactData) => JSON.stringify(payload),
 		options: {
 			headers: {

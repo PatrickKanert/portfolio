@@ -30,4 +30,11 @@ export class SkillsComponent {
 		{ name: "React", icon: "assets/img/skill-icons/react-icon.svg" },
 		{ name: "Vue Js", icon: "assets/img/skill-icons/vue.svg" },
 	];
+
+	scrollTo(sectionId: string): void {
+		const element = document.getElementById(sectionId);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	}
 }

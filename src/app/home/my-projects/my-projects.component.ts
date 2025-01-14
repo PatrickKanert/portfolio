@@ -2,7 +2,7 @@ import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { MatIconModule } from "@angular/material/icon";
 import { TranslatePipe } from "@ngx-translate/core";
-import type { Project } from "../models/project.model";
+import type { Project } from "../../models/project.model";
 import { ProjectOverlayCardComponent } from "./project-overlay-card/project-overlay-card.component";
 
 @Component({

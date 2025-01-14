@@ -3,10 +3,10 @@
     <h2>{{ 'LANDING.FRONTEND_DEVELOPER' | translate }}</h2>
     <h1>Patrick Kanert</h1>
     <div ngClass="btn-container">
-      <button ngClass="btn">
+      <button (click)="scrollTo('my-projects')" ngClass="btn">
         <span>{{ 'LANDING.CHECK_WORK' | translate }}</span>
       </button>
-      <button ngClass="btn">
+      <button (click)="scrollTo('contact')" ngClass="btn">
         <span>{{ 'LANDING.CONTACT_ME' | translate }}</span>
       </button>
     </div>
@@ -52,7 +52,7 @@
       <div ngClass="placeholder-line-scroll"></div>
     </div>
     <div ngClass="social-media">
-      <a ngClass="flip-email" href="mailto:patrickkanert@gmail.com">patrickkanert&#64;gmail.com</a>
+      <a ngClass="flip-email" href="mailto:info@patrick-kanert.com">info&#64;patrick-kanert.com</a>
       <a ngClass="icon" href="https://github.com/PatrickKanert" target="_blank" rel="noopener noreferrer">
         <img src="assets/img/social-media-icons/github.png" alt="">
       </a>

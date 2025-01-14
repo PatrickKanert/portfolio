@@ -85,5 +85,9 @@
         "email": "E-Mail",
         "imprint": "Impressum"
       }
+    },
+    "imprint": {
+      "title": "Impressum",
+      "contact": "Kontakt"
     }
   }

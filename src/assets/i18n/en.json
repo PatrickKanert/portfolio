@@ -85,5 +85,9 @@
           "email": "Email",
           "imprint": "Imprint"
         }
+      },
+      "imprint": {
+        "title": "Imprint",
+        "contact": "Contact"
       }
     }

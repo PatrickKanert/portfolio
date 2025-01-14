@@ -20,4 +20,11 @@ export class HeaderComponent {
 		const checked = (event.target as HTMLInputElement).checked;
 		this.translate.use(checked ? "de" : "en"); // Sprache umschalten
 	}
+
+	scrollTo(sectionId: string): void {
+		const element = document.getElementById(sectionId);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	}
 }
