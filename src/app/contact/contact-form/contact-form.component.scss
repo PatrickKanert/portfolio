@@ -156,6 +156,16 @@ form {
   cursor: pointer;
   overflow: hidden;
 
+  span {
+    font-family: 'Karla';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
   &:not(:disabled) span {
     display: inline-block;
   }

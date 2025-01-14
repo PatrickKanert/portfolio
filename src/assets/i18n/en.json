@@ -58,7 +58,32 @@
         "privacyPolicy2": "privacy policy",
         "privacyPolicy3": " and agree to the processing of my data as outlined. ",
         "privacyPolicyError": "Please accept the privacy policy.",
-        "submitBtn": "Submit",
+        "submitBtn": "Say Hello :)",
         "successMessage": "Your message has been successfully sent. Thank you!"
+      },
+      "contactText": {
+        "title": "Contact me",
+        "subtitle": "Let's work together",
+        "question": "Got a problem to solve?",
+        "description": "Contact me through this form. I am interested in hearing from you, learning about your ideas, and contributing to your projects with my work.",
+        "cta": {
+          "text": "Need a Frontend developer?",
+          "highlight": "Let’s talk!"
+        }
+      },
+      "footer": {
+        "left": {
+          "title": "Web Developer",
+          "location": "Freyung, Germany"
+        },
+        "middle": {
+          "copyright": "© Patrick Kanert 2025"
+        },
+        "right": {
+          "github": "Github",
+          "linkedin": "LinkedIn",
+          "email": "Email",
+          "imprint": "Imprint"
+        }
       }
-}
+    }

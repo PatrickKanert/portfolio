@@ -1,1 +1,19 @@
-<p>footer works!</p>
+<div class="wrapper">
+  <div class="left-side">
+    <img src="assets/img/pk-logo.png" alt="Logo" (click)="scrollToTop()">
+    <div>
+      <span>{{ "footer.left.title" | translate }}</span>
+      <span>{{ "footer.left.location" | translate }}</span>
+    </div>
+  </div>
+  <div class="middle">
+    <span>{{ "footer.middle.copyright" | translate }}</span>
+  </div>
+  <div class="right-side">
+    <a href="https://github.com/PatrickKanert" target="_blank" rel="noopener noreferrer">{{ "footer.right.github" |
+      translate }}</a>
+    <a href="">{{ "footer.right.linkedin" | translate }}</a>
+    <a ngClass="flip-email" href="mailto:patrickkanert@gmail.com">{{ "footer.right.email" | translate }}</a>
+    <a [routerLink]="['/imprint']">{{ "footer.right.imprint" | translate }}</a>
+  </div>
+</div>

@@ -44,21 +44,46 @@
       }
     },
     "contactForm": {
-    "nameLabel": "Name",
-    "namePlaceholder": "Geben Sie Ihren Namen ein",
-    "nameError": "Name ist erforderlich",
-    "emailLabel": "E-Mail",
-    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
-    "emailError": "E-Mail ist erforderlich",
-    "emailInvalid": "Ungültige E-Mail-Adresse",
-    "messageLabel": "Nachricht",
-    "messagePlaceholder": "Geben Sie Ihre Nachricht ein",
-    "messageError": "Nachricht ist erforderlich",
-    "privacyPolicy1": "Ich habe die",
-    "privacyPolicy2": "Datenschutzerklärung",
-    "privacyPolicy3": "gelesen und akzeptiere sie.",
-    "privacyPolicyError": "Bitte akzeptieren Sie die Datenschutzerklärung.",
-    "submitBtn": "Absenden",
-    "successMessage": "Ihre Nachricht wurde erfolgreich gesendet. Vielen Dank!"
-  }
+      "nameLabel": "Wie heißt du?",
+      "namePlaceholder": "Dein Name hier",
+      "nameError": "Hoppla! Es scheint, dein Name fehlt",
+      "emailLabel": "Wie lautet deine E-Mail-Adresse?",
+      "emailPlaceholder": "deinemail@email.com",
+      "emailError": "Hoppla! Deine E-Mail-Adresse wird benötigt",
+      "emailInvalid": "Bitte ein gültiges E-Mail-Format eingeben.",
+      "messageLabel": "Wie kann ich dir helfen?",
+      "messagePlaceholder": "Nachricht eingeben...",
+      "messageError": "Was möchtest du entwickeln?",
+      "privacyPolicy1": "Ich habe die",
+      "privacyPolicy2": "Datenschutzerklärung",
+      "privacyPolicy3": " gelesen und stimme der Verarbeitung meiner Daten zu.",
+      "privacyPolicyError": "Bitte akzeptiere die Datenschutzerklärung.",
+      "submitBtn": "Sagen Sie Hallo :)",
+      "successMessage": "Deine Nachricht wurde erfolgreich gesendet. Vielen Dank!"
+    },
+    "contactText": {
+      "title": "Kontaktiere mich",
+      "subtitle": "Lass uns zusammenarbeiten",
+      "question": "Hast du ein Problem zu lösen?",
+      "description": "Kontaktiere mich über dieses Formular. Ich bin daran interessiert, von dir zu hören, deine Ideen zu erfahren und mit meiner Arbeit zu deinen Projekten beizutragen.",
+      "cta": {
+        "text": "Suchst du einen Frontend-Entwickler?",
+        "highlight": "Lass uns reden!"
+      }
+    },
+    "footer": {
+      "left": {
+        "title": "Webentwickler",
+        "location": "Freyung, Deutschland"
+      },
+      "middle": {
+        "copyright": "© Patrick Kanert 2025"
+      },
+      "right": {
+        "github": "Github",
+        "linkedin": "LinkedIn",
+        "email": "E-Mail",
+        "imprint": "Impressum"
+      }
+    }
   }
