@@ -1,4 +1,8 @@
-import { HttpClient, HttpClientModule } from "@angular/common/http";
+import {
+	HttpClient,
+	HttpClientModule,
+	provideHttpClient,
+} from "@angular/common/http";
 import { ApplicationConfig, importProvidersFrom } from "@angular/core";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
 import { getDatabase, provideDatabase } from "@angular/fire/database";
@@ -18,6 +22,7 @@ export const appConfig: ApplicationConfig = {
 	providers: [
 		// Router-Provider
 		provideRouter(routes),
+		provideHttpClient(),
 
 		// Firebase-Provider
 		importProvidersFrom(

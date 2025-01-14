@@ -27,8 +27,8 @@
 
   <div class="form-row border-bottom">
     <label for="message">{{ "contactForm.messageLabel" | translate }}</label>
-    <textarea autocomplete="off" #message="ngModel" rows="1" [(ngModel)]="contactData.message" id="message"
-      name="subject" [placeholder]="
+    <textarea autocomplete="off" #message="ngModel" minlength="5" rows="1" [(ngModel)]="contactData.message"
+      id="message" name="subject" [placeholder]="
         !message.valid && message.touched
           ? ('contactForm.messageError' | translate)
           : ('contactForm.messagePlaceholder' | translate)
