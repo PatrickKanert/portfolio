@@ -27,8 +27,8 @@
 
   <div class="form-row border-bottom">
     <label for="message">{{ "contactForm.messageLabel" | translate }}</label>
-    <textarea autocomplete="off" #message="ngModel" minlength="5" rows="1" [(ngModel)]="contactData.message"
-      id="message" name="subject" [placeholder]="
+    <textarea autocomplete="off" #message="ngModel" rows="1" [(ngModel)]="contactData.message" id="message"
+      name="subject" [placeholder]="
         !message.valid && message.touched
           ? ('contactForm.messageError' | translate)
           : ('contactForm.messagePlaceholder' | translate)
@@ -36,12 +36,12 @@
   </div>
 
   <div class="checkbox">
-    <mat-checkbox [(ngModel)]="privacyPolicyChecked" name="privacyPolicy" required>
-      {{ "contactForm.privacyPolicy1" | translate }}
+    <mat-checkbox color="primary" [(ngModel)]="privacyPolicyChecked" name="privacyPolicy" required>
+      <span>{{ "contactForm.privacyPolicy1" | translate }}</span>
       <a routerLink="/privacy-policy">
         {{ "contactForm.privacyPolicy2" | translate }}
       </a>
-      {{ "contactForm.privacyPolicy3" | translate }}
+      <span>{{ "contactForm.privacyPolicy3" | translate }}</span>
     </mat-checkbox>
   </div>
 
@@ -58,7 +58,7 @@
 <div class="overlay">
   <div class="success-dialog">
     {{ "contactForm.successMessage" | translate }}
-    <button class="button" (click)="closeDialog()">Ok</button>
+    <button class="btn" (click)="closeDialog()">Ok</button>
   </div>
 </div>
 }

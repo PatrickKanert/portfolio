@@ -41,18 +41,32 @@ export class ContactFormComponent {
 		if (ngForm.submitted && ngForm.form.valid) {
 			this.formSubmitted.set(true);
 			document.body.classList.add("no-scroll");
+
 			this.http
 				.post(this.post.endPoint, this.post.body(this.contactData))
 				.subscribe({
 					next: (response) => {
+						console.log("Form erfolgreich gesendet:", response);
+
+						// Eingabefelder zurücksetzen
+						this.contactData = {
+							name: "",
+							email: "",
+							message: "",
+						};
+
+						// Angular-Formular zurücksetzen
 						ngForm.resetForm();
 					},
 					error: (error) => {
-						console.error(error);
+						console.error("Fehler beim Senden des Formulars:", error);
 					},
-					complete: () => console.info("send post complete"),
+					complete: () => {
+						console.info("Formular erfolgreich verarbeitet.");
+					},
 				});
 		}
+
 		setTimeout(() => {
 			this.formSubmitted.set(false);
 			document.body.classList.remove("no-scroll");

@@ -1,15 +1,3 @@
-@use '@angular/material' as mat; // Muss vor allem anderen stehen
-
-$primary: mat.define-palette(mat.$cyan-palette);
-$accent: mat.define-palette(mat.$pink-palette);
-$theme: mat.define-light-theme((
-  color: (
-    primary: $primary,
-    accent: $accent,
-  )
-));
-
-
 * {
   box-sizing: border-box;
 }
