@@ -74,14 +74,16 @@ export class MyProjectsComponent {
 	activeProject: string | null = null;
 	isLargeScreen: boolean = window.innerWidth > 1370;
 
-	private resizeTimeout: any;
+	private resizeTimeout: ReturnType<typeof setTimeout> | null = null;
 
 	@HostListener("window:resize", ["$event"])
 	onResize(): void {
-		clearTimeout(this.resizeTimeout);
+		if (this.resizeTimeout !== null) {
+			clearTimeout(this.resizeTimeout);
+		}
 		this.resizeTimeout = setTimeout(() => {
 			this.isLargeScreen = window.innerWidth > 1370;
-		}, 200); // Debouncing mit 200ms
+		}, 100);
 	}
 
 	@HostListener("document:keydown.escape", ["$event"])

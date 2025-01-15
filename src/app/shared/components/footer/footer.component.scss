@@ -88,3 +88,20 @@
     }
   }
 }
+
+
+@media (max-width: 999px) {
+  .wrapper {
+    position: relative;
+    padding: 16px;
+  }
+
+  .middle {
+    width: 90%;
+    position: absolute;
+    bottom: -60px;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0px;
+  }
+}
