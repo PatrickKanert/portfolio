@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import { CommonModule } from "@angular/common";
+import { Component, OnInit } from "@angular/core";
+import { TranslateModule, TranslatePipe } from "@ngx-translate/core";
 
 @Component({
-  selector: 'app-privacy-policy',
-  standalone: true,
-  imports: [],
-  templateUrl: './privacy-policy.component.html',
-  styleUrl: './privacy-policy.component.scss'
+	selector: "app-privacy-policy",
+	standalone: true,
+	imports: [CommonModule, TranslatePipe, TranslateModule],
+	templateUrl: "./privacy-policy.component.html",
+	styleUrl: "./privacy-policy.component.scss",
 })
-export class PrivacyPolicyComponent {
-
+export class PrivacyPolicyComponent implements OnInit {
+	ngOnInit(): void {
+		window.scrollTo({ top: 0, behavior: "smooth" }); // Scrollt zur Oberseite
+	}
 }

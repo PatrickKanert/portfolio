@@ -1,12 +1,13 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { MatSlideToggleModule } from "@angular/material/slide-toggle";
+import { RouterModule } from "@angular/router";
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
 
 @Component({
 	selector: "app-header",
 	standalone: true,
-	imports: [CommonModule, MatSlideToggleModule, TranslatePipe],
+	imports: [CommonModule, MatSlideToggleModule, TranslatePipe, RouterModule],
 	templateUrl: "./header.component.html",
 	styleUrls: ["./header.component.scss"],
 })
@@ -19,12 +20,5 @@ export class HeaderComponent {
 	toggleLanguage(event: Event) {
 		const checked = (event.target as HTMLInputElement).checked;
 		this.translate.use(checked ? "de" : "en"); // Sprache umschalten
-	}
-
-	scrollTo(sectionId: string): void {
-		const element = document.getElementById(sectionId);
-		if (element) {
-			element.scrollIntoView({ behavior: "smooth" });
-		}
 	}
 }

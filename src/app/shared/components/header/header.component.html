@@ -9,11 +9,11 @@
           <div ngClass="toggle-thumb"></div>
         </label>
       </div>
-      <a (click)="scrollTo('app-about-me')"> {{ 'HEADER.ABOUT_ME' | translate }} </a>
-      <a (click)="scrollTo('skills')"> {{ 'HEADER.SKILLS' | translate }} </a>
-      <a (click)="scrollTo('my-projects')"> {{ 'HEADER.PROJECTS' | translate }} </a>
+      <a href="#about-me"> {{ 'HEADER.ABOUT_ME' | translate }} </a>
+      <a href="#skills"> {{ 'HEADER.SKILLS' | translate }} </a>
+      <a href="#my-projects"> {{ 'HEADER.PROJECTS' | translate }} </a>
     </nav>
-    <div ngClass="logo">
+    <div ngClass="logo" routerLink="/">
       <img src="assets/img/pk-logo.png" alt="">
     </div>
   </div>

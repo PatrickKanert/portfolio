@@ -20,74 +20,190 @@
     "OPEN_MINDED": "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.",
     "QUALITY": "In my profession, programming isn't just about writing code; it's a creative form of problem-solving. I take pride in my ability to distill complex technical challenges into simple, user-friendly solutions. This way, I help you achieve your goals and bring your visions to life."
   },
-    "SKILLS": {
-      "TECHNOLOGIES": "Technologies",
-      "SKILL_SET": "Skill Set",
-      "SKILL_DESCRIPTION": "My journey has involved working on diverse projects, employing a range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to continuously enhance my skills and stay ahead in the ever-evolving landscape of web development.",
-      "NEED_ANOTHER_SKILL": "You need",
-      "NEED_ANOTHER_SKILL_PART2": "another skill?",
-      "ANOTHER_SKILL_DESCRIPTION": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
-      "LETS_TALK": "Let's Talk",
-      "IM_INTERESTED": "I have a speacial interest in learning"
+  "SKILLS": {
+    "TECHNOLOGIES": "Technologies",
+    "SKILL_SET": "Skill Set",
+    "SKILL_DESCRIPTION": "My journey has involved working on diverse projects, employing a range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to continuously enhance my skills and stay ahead in the ever-evolving landscape of web development.",
+    "NEED_ANOTHER_SKILL": "You need",
+    "NEED_ANOTHER_SKILL_PART2": "another skill?",
+    "ANOTHER_SKILL_DESCRIPTION": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "LETS_TALK": "Let's Talk",
+    "IM_INTERESTED": "I have a speacial interest in learning"
+  },
+  "PORTFOLIO": {
+    "TITLE": "Portfolio",
+    "FEATURED_PROJECTS": "Featured Projects",
+    "EXPLORE": "Explore a selection of my work here - Interact with projects to see my skills in action."
+  },
+  "PROJECT": {
+    "ABOUT": "What is this project about?",
+    "DESCRIPTION": {
+      "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "EL_POLLO_LOCO": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      "DA_BUBBLE": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+    }
+  },
+  "contactForm": {
+    "nameLabel": "What's your name?",
+    "namePlaceholder": "Your name goes here",
+    "nameError": "Oops! it seems your name is missing",
+    "emailLabel": "What's your email?",
+    "emailPlaceholder": "youremail@email.com",
+    "emailError": "Hoppla! your email is required",
+    "emailInvalid": "Please enter a valid email format.",
+    "messageLabel": "How can I help you?",
+    "messagePlaceholder": "Enter a message...",
+    "messageError": "What do you need to develop?",
+    "privacyPolicy1": "I've read the",
+    "privacyPolicy2": "privacy policy",
+    "privacyPolicy3": " and agree to the processing of my data as outlined. ",
+    "privacyPolicyError": "Please accept the privacy policy.",
+    "submitBtn": "Say Hello :)",
+    "successMessage": "Your message has been successfully sent. Thank you!"
+  },
+  "contactText": {
+    "title": "Contact me",
+    "subtitle": "Let's work together",
+    "question": "Got a problem to solve?",
+    "description": "Contact me through this form. I am interested in hearing from you, learning about your ideas, and contributing to your projects with my work.",
+    "cta": {
+      "text": "Need a Frontend developer?",
+      "highlight": "Let’s talk!"
+    }
+  },
+  "footer": {
+    "left": {
+      "title": "Web Developer",
+      "location": "Freyung, Germany"
     },
-    "PORTFOLIO": {
-      "TITLE": "Portfolio",
-      "FEATURED_PROJECTS": "Featured Projects",
-      "EXPLORE": "Explore a selection of my work here - Interact with projects to see my skills in action."
+    "middle": {
+      "copyright": "© Patrick Kanert 2025"
     },
-    "PROJECT": {
-      "ABOUT": "What is this project about?",
-      "DESCRIPTION": {
-        "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "EL_POLLO_LOCO": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-        "DA_BUBBLE": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+    "right": {
+      "github": "Github",
+      "linkedin": "LinkedIn",
+      "email": "Email",
+      "imprint": "Imprint"
+    }
+  },
+  "imprint": {
+    "title": "Imprint",
+    "contact": "Contact"
+  },
+  "privacy_policy": {
+    "title": "Privacy Policy",
+    "overview": {
+      "title": "1. Privacy at a Glance",
+      "general_notes": {
+        "title": "General Information",
+        "content": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data with which you can be personally identified. Detailed information on the subject of data protection can be found in our privacy policy below."
+      },
+      "data_collection": {
+        "title": "Data Collection on this Website",
+        "responsible": {
+          "title": "Who is responsible for the data collection on this website?",
+          "content": "The data processing on this website is carried out by the website operator. You can find their contact details in the section 'Notice about the responsible party' in this privacy policy."
+        },
+        "how_we_collect": {
+          "title": "How do we collect your data?",
+          "content_1": "Your data is collected when you provide it to us. This could, for example, be data that you enter in a contact form.",
+          "content_2": "Other data is collected automatically or with your consent when you visit the website by our IT systems. This is primarily technical data (e.g., internet browser, operating system, or the time of the page view). This data is collected automatically as soon as you enter this website."
+        },
+        "usage": {
+          "title": "What do we use your data for?",
+          "content": "Part of the data is collected to ensure the error-free provision of the website. Other data may be used to analyze your user behavior. If contracts are initiated or concluded via the website, the transmitted data will also be used for contractual offers, orders, or other service inquiries."
+        },
+        "rights": {
+          "title": "What rights do you have regarding your data?",
+          "content": "You have the right to receive information about the origin, recipient, and purpose of your stored personal data at any time free of charge. You also have the right to request the correction or deletion of this data. If you have given consent to data processing, you can revoke this consent at any time for the future. You also have the right to request the restriction of the processing of your personal data under certain circumstances. Furthermore, you have the right to lodge a complaint with the competent supervisory authority."
+        }
       }
     },
-      "contactForm": {
-        "nameLabel": "What's your name?",
-        "namePlaceholder": "Your name goes here",
-        "nameError": "Oops! it seems your name is missing",
-        "emailLabel": "What's your email?",
-        "emailPlaceholder": "youremail@email.com",
-        "emailError": "Hoppla! your email is required",
-        "emailInvalid": "Please enter a valid email format.",
-        "messageLabel": "How can I help you?",
-        "messagePlaceholder": "Enter a message...",
-        "messageError": "What do you need to develop?",
-        "privacyPolicy1": "I've read the",
-        "privacyPolicy2": "privacy policy",
-        "privacyPolicy3": " and agree to the processing of my data as outlined. ",
-        "privacyPolicyError": "Please accept the privacy policy.",
-        "submitBtn": "Say Hello :)",
-        "successMessage": "Your message has been successfully sent. Thank you!"
+    "hosting": {
+      "title": "2. Hosting",
+      "general": {
+        "content": "We host the content of our website with the following provider:"
       },
-      "contactText": {
-        "title": "Contact me",
-        "subtitle": "Let's work together",
-        "question": "Got a problem to solve?",
-        "description": "Contact me through this form. I am interested in hearing from you, learning about your ideas, and contributing to your projects with my work.",
-        "cta": {
-          "text": "Need a Frontend developer?",
-          "highlight": "Let’s talk!"
-        }
+      "provider": {
+        "title": "All-Inkl",
+        "content": "The provider is ALL-INKL.COM - Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf (hereinafter All-Inkl). Details can be found in All-Inkl's privacy policy: https://all-inkl.com/datenschutzinformationen/"
       },
-      "footer": {
-        "left": {
-          "title": "Web Developer",
-          "location": "Freyung, Germany"
-        },
-        "middle": {
-          "copyright": "© Patrick Kanert 2025"
-        },
-        "right": {
-          "github": "Github",
-          "linkedin": "LinkedIn",
-          "email": "Email",
-          "imprint": "Imprint"
-        }
+      "reason": {
+        "content": "The use of All-Inkl is based on Article 6(1)(f) of the GDPR. We have a legitimate interest in the most reliable presentation of our website. If consent has been requested, the processing is carried out exclusively based on Article 6(1)(a) of the GDPR and § 25(1) TDDG, insofar as the consent includes the storage of cookies or access to information in the user's terminal device (e.g., device fingerprinting) within the meaning of the TDDG. Consent can be revoked at any time."
       },
-      "imprint": {
-        "title": "Imprint",
-        "contact": "Contact"
+      "processing_contract": {
+        "title": "Order Processing",
+        "content": "We have concluded a contract for order processing (AVV) for the use of the above-mentioned service. This is a data protection contract required by law, which ensures that the provider processes the personal data of our website visitors only in accordance with our instructions and in compliance with the GDPR."
+      }
+    },
+    "general_information": {
+      "title": "3. General Information and Mandatory Notices",
+      "data_protection": {
+        "title": "Data Protection",
+        "content": "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy. When you use this website, various personal data are collected. Personal data is data with which you can be personally identified. This privacy policy explains what data we collect and what we use it for. It also explains how and for what purpose this happens. We would like to point out that data transmission over the Internet (e.g., when communicating by e-mail) can have security gaps. A complete protection of data against access by third parties is not possible."
+      },
+      "legal_basis": {
+        "title": "General Information on the Legal Basis of Data Processing on this Website",
+        "content": "If you have consented to data processing, we process your personal data based on Article 6(1)(a) of the GDPR or Article 9(2)(a) of the GDPR if special categories of data are processed under Article 9(1) of the GDPR. In the case of explicit consent to the transfer of personal data to third countries, the data processing is also carried out based on Article 49(1)(a) of the GDPR. If you have consented to the storage of cookies or access to information in your terminal device (e.g., via device fingerprinting), the data processing is also carried out based on § 25(1) TDDG. Consent can be revoked at any time. If your data is required for contract fulfillment or pre-contractual measures, we process your data based on Article 6(1)(b) of the GDPR. Furthermore, we process your data if this is necessary to fulfill a legal obligation based on Article 6(1)(c) of the GDPR. Data processing can also be based on our legitimate interest under Article 6(1)(f) of the GDPR. The specific legal bases relevant to each individual case are detailed in this privacy policy."
+      },
+      "data_recipients": {
+        "title": "Recipients of Personal Data",
+        "content": "As part of our business activities, we work with various external parties. This sometimes also requires the transfer of personal data to these external parties. We only pass on personal data to external parties if this is necessary for contract fulfillment, if we are legally obliged to do so (e.g., transfer of data to tax authorities), if we have a legitimate interest under Article 6(1)(f) of the GDPR in the transfer, or if another legal basis permits the transfer of data. When using processors, we only pass on personal data of our customers based on a valid processing contract. In the case of joint processing, a joint processing contract is concluded."
+      },
+      "withdrawal": {
+        "title": "Revocation of Your Consent to Data Processing",
+        "content": "Many data processing operations are only possible with your explicit consent. You can revoke consent already given at any time. The legality of the data processing carried out until the revocation remains unaffected by the revocation."
+      },
+      "right_to_object": {
+        "title": "Right to Object to Data Collection in Special Cases and to Direct Marketing (Article 21 GDPR)",
+        "content": "If the data processing is based on Article 6(1)(e) or (f) of the GDPR, you have the right to object to the processing of your personal data at any time for reasons arising from your particular situation; this also applies to profiling based on these provisions. The respective legal basis on which processing is based can be found in this privacy policy. If you object, we will no longer process your personal data unless we can demonstrate compelling legitimate grounds for processing that override your interests, rights, and freedoms, or the processing serves the assertion, exercise, or defense of legal claims (objection under Article 21(1) GDPR)."
+      },
+      "complaint": {
+        "title": "Right to Lodge a Complaint with the Competent Supervisory Authority",
+        "content": "In the event of violations of the GDPR, data subjects have the right to lodge a complaint with a supervisory authority, in particular in the Member State of their habitual residence, place of work, or the place of the alleged infringement. The right to complain is without prejudice to other administrative or judicial remedies."
+      },
+      "data_transfer": {
+        "title": "Right to Data Portability",
+        "content": "You have the right to have data that we process automatically based on your consent or in fulfillment of a contract handed over to you or to a third party in a common, machine-readable format. If you request the direct transfer of the data to another responsible party, this will only be done insofar as it is technically feasible."
+      },
+      "information_correction_deletion": {
+        "title": "Information, Correction, and Deletion",
+        "content": "Within the framework of the applicable legal provisions, you have the right to free information about your stored personal data, its origin and recipient, and the purpose of the data processing and, if applicable, a right to correction or deletion of this data at any time. For this and other questions on the subject of personal data, you can contact us at any time."
+      },
+      "restriction": {
+        "title": "Right to Restriction of Processing",
+        "content": "You have the right to request the restriction of the processing of your personal data. To do so, you can contact us at any time. The right to restrict processing exists in the following cases: ..."
+      },
+      "ssl_tls": {
+        "title": "SSL or TLS Encryption",
+        "content": "This site uses SSL or TLS encryption for security reasons and to protect the transmission of confidential content, such as orders or inquiries you send to us as the site operator. You can recognize an encrypted connection by the fact that the address line of the browser changes from 'http://' to 'https://' and by the lock symbol in your browser line. If SSL or TLS encryption is activated, the data you transmit to us cannot be read by third parties."
+      },
+      "responsible": {
+        "title": "Notice About the Responsible Party",
+        "content": "The responsible party for data processing on this website is: Patrick Kanert, Kirchl 24, 94545 Hohenau, Phone: +49 151 67242378, Email: patrickkanert@gmail.com. The responsible party is the natural or legal person who alone or jointly with others determines the purposes and means of the processing of personal data (e.g., names, email addresses, etc.)."
+      },
+      "storage_period": {
+        "title": "Storage Period",
+        "content": "Unless a more specific storage period has been specified in this privacy policy, your personal data will remain with us until the purpose for the data processing no longer applies. If you assert a legitimate request for deletion or revoke your consent to data processing, your data will be deleted unless we have other legally permissible reasons for storing your personal data (e.g., retention periods under tax or commercial law); in the latter case, the deletion will take place after these reasons cease to apply."
+      }
+    },
+    "data_collection": {
+      "title": "4. Data Collection on this Website",
+      "contact_form": {
+        "title": "Contact Form",
+        "content": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and in case of follow-up questions. We do not pass on this data without your consent."
+      },
+      "email": {
+        "title": "Inquiry by Email, Phone, or Fax",
+        "content": "If you contact us by email, phone, or fax, your inquiry, including all resulting personal data (name, inquiry), will be stored and processed by us for the purpose of processing your request. We do not pass on this data without your consent."
+      }
+    },
+    "plugins_tools": {
+      "title": "5. Plugins and Tools",
+      "google_fonts": {
+        "title": "Google Fonts (Local Hosting)",
+        "content": "This site uses so-called Google Fonts, provided by Google, for the uniform display of fonts. The Google Fonts are installed locally. No connection to Google servers takes place."
       }
     }
+  }
+}
