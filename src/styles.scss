@@ -87,6 +87,12 @@ body {
   }
 }
 
+@media (max-width: 999px) {
+  app-contact {
+    padding: 0px 16px 100px 16px;
+  }
+}
+
 // Fonts //
 
 @font-face {
