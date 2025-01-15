@@ -44,6 +44,11 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+app-footer {
+  display: flex;
+  justify-content: center;
+}
+
 .btn {
   font-family: "Karla", Arial, Helvetica, sans-serif;
   font-size: 18px;
