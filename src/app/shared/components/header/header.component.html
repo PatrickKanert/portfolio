@@ -1,6 +1,6 @@
 <div ngClass="header-bg">
   <div ngClass="header">
-    <nav>
+    <nav class="navigation" [ngClass]="{ 'd-none': isSmallScreen }">
       <div ngClass="custom-toggle">
         <input type="checkbox" id="language-toggle" ngClass="toggle-input" (change)="toggleLanguage($event)" />
         <label for="language-toggle" ngClass="toggle-label">
@@ -13,8 +13,31 @@
       <a href="#skills"> {{ 'HEADER.SKILLS' | translate }} </a>
       <a href="#my-projects"> {{ 'HEADER.PROJECTS' | translate }} </a>
     </nav>
+
+    <div class="burger-menu" (click)="toggleMenu()" [ngClass]="{ 'd-none': !isSmallScreen }">
+      <mat-icon aria-hidden="false" aria-label="Example menu icon" fontIcon="menu"></mat-icon>
+      <div *ngIf="isMenuOpen" class="burger-menu-content">
+        <nav>
+          <a href="#about-me"> {{ 'HEADER.ABOUT_ME' | translate }} </a>
+          <a href="#skills"> {{ 'HEADER.SKILLS' | translate }} </a>
+          <a href="#my-projects"> {{ 'HEADER.PROJECTS' | translate }} </a>
+          <div class="custom-toggle" (click)="$event.stopPropagation()">
+            <input type="checkbox" id="language-toggle" ngClass="toggle-input" (change)="toggleLanguage($event)" />
+            <label for="language-toggle" class="toggle-label">
+              <span class="toggle-text en">EN</span>
+              <span class="toggle-text de">DE</span>
+              <div class="toggle-thumb"></div>
+            </label>
+          </div>
+
+        </nav>
+      </div>
+    </div>
+
+
     <div ngClass="logo" routerLink="/">
-      <img src="assets/img/pk-logo.png" alt="">
+      <img [ngClass]="{ 'd-none': !isSmallScreen }" [ngStyle]="{ width: '80px' }" src="assets/img/favicon.png" alt="" />
+      <img [ngClass]="{ 'd-none': isSmallScreen }" src="assets/img/pk-logo.png" alt="">
     </div>
   </div>
 </div>
