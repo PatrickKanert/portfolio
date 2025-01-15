@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, HostListener } from "@angular/core";
 import { MatIconModule } from "@angular/material/icon";
 import { TranslatePipe } from "@ngx-translate/core";
 import type { Project } from "../../models/project.model";
@@ -72,9 +72,27 @@ export class MyProjectsComponent {
 
 	hoveredProject: string | null = null;
 	activeProject: string | null = null;
+	isLargeScreen: boolean = window.innerWidth > 1370;
+
+	private resizeTimeout: any;
+
+	@HostListener("window:resize", ["$event"])
+	onResize(): void {
+		clearTimeout(this.resizeTimeout);
+		this.resizeTimeout = setTimeout(() => {
+			this.isLargeScreen = window.innerWidth > 1370;
+		}, 200); // Debouncing mit 200ms
+	}
+
+	@HostListener("document:keydown.escape", ["$event"])
+	onEscape(): void {
+		this.setActiveProject(null);
+	}
 
 	setHoveredProject(projectId: string | null): void {
-		this.hoveredProject = projectId;
+		if (this.isLargeScreen) {
+			this.hoveredProject = projectId;
+		}
 	}
 
 	setActiveProject(projectId: string | null): void {
@@ -87,8 +105,7 @@ export class MyProjectsComponent {
 	}
 
 	getActiveProject(): Project | undefined {
-		const active = this.projects.find((p) => p.id === this.activeProject);
-		return active;
+		return this.projects.find((p) => p.id === this.activeProject);
 	}
 
 	nextProject(): void {
