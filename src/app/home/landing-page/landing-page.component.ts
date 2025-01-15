@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, HostListener } from "@angular/core";
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
 
 @Component({
@@ -11,6 +11,7 @@ import { TranslatePipe, TranslateService } from "@ngx-translate/core";
 })
 export class LandingPageComponent {
 	sliderItems: string[] = [];
+	isSmallScreen: boolean = window.innerWidth <= 599;
 
 	constructor(private translate: TranslateService) {
 		this.updateSliderItems();
@@ -40,5 +41,10 @@ export class LandingPageComponent {
 		if (element) {
 			element.scrollIntoView({ behavior: "smooth" });
 		}
+	}
+
+	@HostListener("window:resize", ["$event"])
+	onResize(event: Event): void {
+		this.isSmallScreen = window.innerWidth <= 599;
 	}
 }

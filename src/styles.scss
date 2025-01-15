@@ -12,6 +12,10 @@ body {
   scrollbar-color: #3DCFB6 #1c1c1c;
 }
 
+.d-none {
+  display: none !important;
+}
+
 app-landing-page {
   background: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
   display: flex;

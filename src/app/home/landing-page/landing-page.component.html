@@ -52,7 +52,12 @@
       <div ngClass="placeholder-line-scroll"></div>
     </div>
     <div ngClass="social-media">
-      <a ngClass="flip-email" href="mailto:info@patrick-kanert.com">info&#64;patrick-kanert.com</a>
+      <a [ngClass]="{ 'd-none': isSmallScreen }" class="flip-email" href="mailto:info@patrick-kanert.com">
+        info&#64;patrick-kanert.com
+      </a>
+      <a [ngClass]="{ 'd-none': !isSmallScreen }" href="mailto:info@patrick-kanert.com">
+        <img class="email-icon" src="assets/img/icons/mail.png" alt="mail">
+      </a>
       <a ngClass="icon" href="https://github.com/PatrickKanert" target="_blank" rel="noopener noreferrer">
         <img src="assets/img/social-media-icons/github.png" alt="">
       </a>
