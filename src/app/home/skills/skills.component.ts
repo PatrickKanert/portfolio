@@ -1,5 +1,12 @@
+import {
+	animate,
+	state,
+	style,
+	transition,
+	trigger,
+} from "@angular/animations";
 import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, ElementRef, HostListener } from "@angular/core";
 import { TranslatePipe } from "@ngx-translate/core";
 
 @Component({
@@ -8,6 +15,18 @@ import { TranslatePipe } from "@ngx-translate/core";
 	imports: [CommonModule, TranslatePipe],
 	templateUrl: "./skills.component.html",
 	styleUrl: "./skills.component.scss",
+	animations: [
+		trigger("fadeInLeft", [
+			state("hidden", style({ opacity: 0, transform: "translateX(-150px)" })), // Startzustand
+			state("visible", style({ opacity: 1, transform: "translateX(0)" })), // Endzustand
+			transition("hidden => visible", animate("500ms ease-in-out")), // Animation
+		]),
+		trigger("fadeInRight", [
+			state("hidden", style({ opacity: 0, transform: "translateX(150px)" })), // Startzustand
+			state("visible", style({ opacity: 1, transform: "translateX(0)" })), // Endzustand
+			transition("hidden => visible", animate("500ms ease-in-out")), // Animation
+		]),
+	],
 })
 export class SkillsComponent {
 	skills = [
@@ -30,6 +49,18 @@ export class SkillsComponent {
 		{ name: "React", icon: "assets/img/skill-icons/react-icon.svg" },
 		{ name: "Vue Js", icon: "assets/img/skill-icons/vue.svg" },
 	];
+
+	fadeIn = "hidden";
+
+	constructor(private el: ElementRef) {}
+
+	@HostListener("window:scroll", ["$event"])
+	onScroll() {
+		const rect = this.el.nativeElement.getBoundingClientRect();
+		if (rect.top < window.innerHeight * 0.8) {
+			this.fadeIn = "visible";
+		}
+	}
 
 	scrollTo(sectionId: string): void {
 		const element = document.getElementById(sectionId);

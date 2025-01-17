@@ -1,3 +1,4 @@
+import { CommonModule } from "@angular/common";
 import { HttpClient } from "@angular/common/http";
 import { Component, inject, signal } from "@angular/core";
 import { FormsModule, NgForm } from "@angular/forms";
@@ -9,7 +10,13 @@ import type { ContactData } from "../../../models/contact.model";
 @Component({
 	selector: "app-contact-form",
 	standalone: true,
-	imports: [FormsModule, RouterLink, TranslatePipe, MatCheckboxModule],
+	imports: [
+		CommonModule,
+		FormsModule,
+		RouterLink,
+		TranslatePipe,
+		MatCheckboxModule,
+	],
 	templateUrl: "./contact-form.component.html",
 	styleUrl: "./contact-form.component.scss",
 })
@@ -38,6 +45,7 @@ export class ContactFormComponent {
 	};
 
 	onSubmit(ngForm: NgForm) {
+		this.formSubmitted.set(true);
 		if (ngForm.submitted && ngForm.form.valid) {
 			this.formSubmitted.set(true);
 			document.body.classList.add("no-scroll");
@@ -47,15 +55,6 @@ export class ContactFormComponent {
 				.subscribe({
 					next: (response) => {
 						console.log("Form erfolgreich gesendet:", response);
-
-						// Eingabefelder zurücksetzen
-						this.contactData = {
-							name: "",
-							email: "",
-							message: "",
-						};
-
-						// Angular-Formular zurücksetzen
 						ngForm.resetForm();
 					},
 					error: (error) => {

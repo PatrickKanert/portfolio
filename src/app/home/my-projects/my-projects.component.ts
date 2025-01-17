@@ -1,5 +1,12 @@
+import {
+	animate,
+	state,
+	style,
+	transition,
+	trigger,
+} from "@angular/animations";
 import { CommonModule } from "@angular/common";
-import { Component, HostListener } from "@angular/core";
+import { Component, ElementRef, HostListener } from "@angular/core";
 import { MatIconModule } from "@angular/material/icon";
 import { TranslatePipe } from "@ngx-translate/core";
 import type { Project } from "../../models/project.model";
@@ -16,6 +23,18 @@ import { ProjectOverlayCardComponent } from "./project-overlay-card/project-over
 	],
 	templateUrl: "./my-projects.component.html",
 	styleUrl: "./my-projects.component.scss",
+	animations: [
+		trigger("fadeInLeft", [
+			state("hidden", style({ opacity: 0, transform: "translateX(-150px)" })), // Startzustand
+			state("visible", style({ opacity: 1, transform: "translateX(0)" })), // Endzustand
+			transition("hidden => visible", animate("500ms ease-in-out")), // Animation
+		]),
+		trigger("fadeInRight", [
+			state("hidden", style({ opacity: 0, transform: "translateX(150px)" })), // Startzustand
+			state("visible", style({ opacity: 1, transform: "translateX(0)" })), // Endzustand
+			transition("hidden => visible", animate("500ms ease-in-out")), // Animation
+		]),
+	],
 })
 export class MyProjectsComponent {
 	projects: Project[] = [
@@ -73,8 +92,19 @@ export class MyProjectsComponent {
 	hoveredProject: string | null = null;
 	activeProject: string | null = null;
 	isLargeScreen: boolean = window.innerWidth > 1370;
+	fadeIn = "hidden";
 
 	private resizeTimeout: ReturnType<typeof setTimeout> | null = null;
+
+	constructor(private el: ElementRef) {}
+
+	@HostListener("window:scroll", ["$event"])
+	onScroll() {
+		const rect = this.el.nativeElement.getBoundingClientRect();
+		if (rect.top < window.innerHeight * 0.8) {
+			this.fadeIn = "visible";
+		}
+	}
 
 	@HostListener("window:resize", ["$event"])
 	onResize(): void {

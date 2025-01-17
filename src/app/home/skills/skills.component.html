@@ -1,8 +1,8 @@
 <div class="skills">
   <div class="content">
-    <h2>{{ 'SKILLS.TECHNOLOGIES' | translate }}</h2>
+    <h2 [@fadeInLeft]="fadeIn">{{ 'SKILLS.TECHNOLOGIES' | translate }}</h2>
     <div class="technologies">
-      <div class="skill-set">
+      <div [@fadeInLeft]="fadeIn" class="skill-set">
         <h1>{{ 'SKILLS.SKILL_SET' | translate }}</h1>
         <span class="skill-description">{{ 'SKILLS.SKILL_DESCRIPTION' | translate }}</span>
         <div>
@@ -17,7 +17,7 @@
           <button (click)="scrollTo('contact')" class="btn"><span>{{ 'SKILLS.LETS_TALK' | translate }}</span></button>
         </div>
       </div>
-      <div class="skill-icons">
+      <div [@fadeInRight]="fadeIn" class="skill-icons">
         <div *ngFor="let skill of skills">
           <img [src]="skill.icon" [alt]="skill.name">
           <span>{{ skill.name }}</span>

@@ -23,6 +23,7 @@ export const appConfig: ApplicationConfig = {
 		// Router-Provider
 		provideRouter(routes),
 		provideHttpClient(),
+		provideAnimations(),
 
 		// Firebase-Provider
 		importProvidersFrom(

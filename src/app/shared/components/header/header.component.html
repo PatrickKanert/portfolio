@@ -1,14 +1,16 @@
 <div ngClass="header-bg">
   <div ngClass="header">
     <nav class="navigation" [ngClass]="{ 'd-none': isSmallScreen }">
-      <div ngClass="custom-toggle">
-        <input type="checkbox" id="language-toggle" ngClass="toggle-input" (change)="toggleLanguage($event)" />
-        <label for="language-toggle" ngClass="toggle-label">
-          <span ngClass="toggle-text en">EN</span>
-          <span ngClass="toggle-text de">DE</span>
-          <div ngClass="toggle-thumb"></div>
+      <div class="custom-toggle">
+        <input type="checkbox" id="language-toggle" class="toggle-input" [checked]="isGerman"
+          (change)="toggleLanguage()" />
+        <label for="language-toggle" class="toggle-label">
+          <span class="toggle-text en">EN</span>
+          <span class="toggle-text de">DE</span>
+          <div class="toggle-thumb"></div>
         </label>
       </div>
+
       <a href="#about-me"> {{ 'HEADER.ABOUT_ME' | translate }} </a>
       <a href="#skills"> {{ 'HEADER.SKILLS' | translate }} </a>
       <a href="#my-projects"> {{ 'HEADER.PROJECTS' | translate }} </a>
@@ -16,19 +18,21 @@
 
     <div class="burger-menu" (click)="toggleMenu()" [ngClass]="{ 'd-none': !isSmallScreen }">
       <mat-icon aria-hidden="false" aria-label="Example menu icon" fontIcon="menu"></mat-icon>
-      <div *ngIf="isMenuOpen" class="burger-menu-content">
+      <div [@openClose]="isMenuOpen ? 'open' : 'closed'" class="burger-menu-content">
         <nav>
           <a href="#about-me"> {{ 'HEADER.ABOUT_ME' | translate }} </a>
           <a href="#skills"> {{ 'HEADER.SKILLS' | translate }} </a>
           <a href="#my-projects"> {{ 'HEADER.PROJECTS' | translate }} </a>
           <div class="custom-toggle" (click)="$event.stopPropagation()">
-            <input type="checkbox" id="language-toggle" ngClass="toggle-input" (change)="toggleLanguage($event)" />
+            <input type="checkbox" id="language-toggle" class="toggle-input" [checked]="isGerman"
+              (change)="toggleLanguage()" />
             <label for="language-toggle" class="toggle-label">
               <span class="toggle-text en">EN</span>
               <span class="toggle-text de">DE</span>
               <div class="toggle-thumb"></div>
             </label>
           </div>
+
 
         </nav>
       </div>

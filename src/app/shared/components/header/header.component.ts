@@ -1,3 +1,10 @@
+import {
+	animate,
+	state,
+	style,
+	transition,
+	trigger,
+} from "@angular/animations";
 import { CommonModule } from "@angular/common";
 import { Component, HostListener } from "@angular/core";
 import { MatIconModule } from "@angular/material/icon";
@@ -17,27 +24,39 @@ import { TranslatePipe, TranslateService } from "@ngx-translate/core";
 	],
 	templateUrl: "./header.component.html",
 	styleUrls: ["./header.component.scss"],
+	animations: [
+		trigger("openClose", [
+			state("closed", style({ opacity: 0, transform: "translateX(100%)" })),
+			state("open", style({ opacity: 1, transform: "translateX(0)" })),
+			transition("closed <=> open", [animate("300ms ease-in-out")]),
+		]),
+	],
 })
 export class HeaderComponent {
 	isSmallScreen: boolean = window.innerWidth <= 799;
 	isMenuOpen = false;
+	isGerman = false;
 
 	constructor(private translate: TranslateService) {
 		this.translate.addLangs(["de", "en"]);
-		this.translate.setDefaultLang("en");
+		const savedLang = localStorage.getItem("lang") || "en";
+		this.translate.setDefaultLang(savedLang);
+		this.isGerman = savedLang === "de";
 	}
 
-	toggleLanguage(event: Event) {
-		const checked = (event.target as HTMLInputElement).checked;
-		this.translate.use(checked ? "de" : "en"); // Sprache umschalten
+	toggleLanguage(): void {
+		this.isGerman = !this.isGerman;
+		const newLang = this.isGerman ? "de" : "en";
+		this.translate.use(newLang);
+		localStorage.setItem("lang", newLang); // Sprache speichern
 	}
 
 	@HostListener("window:resize", ["$event"])
-	onResize(event: Event): void {
+	onResize(): void {
 		this.isSmallScreen = window.innerWidth <= 799;
 	}
 
 	toggleMenu(): void {
-		this.isMenuOpen = !this.isMenuOpen; // Zustand umschalten
+		this.isMenuOpen = !this.isMenuOpen;
 	}
 }

@@ -19,7 +19,6 @@
   padding: 0px 32px;
   display: flex;
   gap: 48px;
-  margin-top: 40px;
   z-index: 99;
   .btn-container {
     display: flex;
@@ -224,6 +223,7 @@ h2 {
   }
 
   h1 {
+    margin: 0;
     font-size: 94px;
   }
 
@@ -251,9 +251,13 @@ h2 {
   }
 
   .intro-section{
-    gap: 24px;
+    gap: 0px;
     padding: 0px 8px;
     margin: 0px;
+  }
+
+  .btn-container {
+    margin-top: 24px;
   }
 
   h1 {

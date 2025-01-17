@@ -1,9 +1,9 @@
 <div ngClass="wrapper">
   <div ngClass="content">
-    <div class="image-background">
+    <div [@fadeInLeft]="fadeIn" class="image-background">
       <img src="assets/img/me.jpg" alt="">
     </div>
-    <div ngClass="description-of-me-container">
+    <div [@fadeInRight]="fadeIn" ngClass="description-of-me-container">
       <h3>{{ 'ABOUT_ME.WHO_I_AM' | translate }}</h3>
       <div ngClass="description-of-me">
         <h2>{{ 'ABOUT_ME.TITLE' | translate }}</h2>
