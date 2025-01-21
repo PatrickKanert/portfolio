@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <div class="contact-text">
+  <div [@fadeInLeft]="fadeIn" class="contact-text">
     <h2>{{ "contactText.title" | translate }}</h2>
     <h3>{{ "contactText.subtitle" | translate }}</h3>
     <div class="contact-text-content">
@@ -15,5 +15,5 @@
       </div>
     </div>
   </div>
-  <app-contact-form />
+  <app-contact-form [@fadeInRight]="fadeIn" />
 </div>

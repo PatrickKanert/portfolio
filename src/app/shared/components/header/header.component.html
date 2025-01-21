@@ -16,13 +16,13 @@
       <a href="#my-projects"> {{ 'HEADER.PROJECTS' | translate }} </a>
     </nav>
 
-    <div class="burger-menu" (click)="toggleMenu()" [ngClass]="{ 'd-none': !isSmallScreen }">
-      <mat-icon aria-hidden="false" aria-label="Example menu icon" fontIcon="menu"></mat-icon>
+    <div class="burger-menu" [ngClass]="{ 'd-none': !isSmallScreen }">
+      <mat-icon (click)="toggleMenu()" aria-hidden="false" aria-label="Example menu icon" fontIcon="menu"></mat-icon>
       <div [@openClose]="isMenuOpen ? 'open' : 'closed'" class="burger-menu-content">
         <nav>
-          <a href="#about-me"> {{ 'HEADER.ABOUT_ME' | translate }} </a>
-          <a href="#skills"> {{ 'HEADER.SKILLS' | translate }} </a>
-          <a href="#my-projects"> {{ 'HEADER.PROJECTS' | translate }} </a>
+          <a (click)="closeMenu()" href="#about-me"> {{ 'HEADER.ABOUT_ME' | translate }} </a>
+          <a (click)="closeMenu()" href="#skills"> {{ 'HEADER.SKILLS' | translate }} </a>
+          <a (click)="closeMenu()" href="#my-projects"> {{ 'HEADER.PROJECTS' | translate }} </a>
           <div class="custom-toggle" (click)="$event.stopPropagation()">
             <input type="checkbox" id="language-toggle" class="toggle-input" [checked]="isGerman"
               (change)="toggleLanguage()" />

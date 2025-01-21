@@ -59,4 +59,8 @@ export class HeaderComponent {
 	toggleMenu(): void {
 		this.isMenuOpen = !this.isMenuOpen;
 	}
+
+	closeMenu(): void {
+		this.isMenuOpen = false; // Schließt das Menü, wenn ein Link angeklickt wird
+	}
 }
