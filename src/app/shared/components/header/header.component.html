@@ -10,12 +10,10 @@
           <div class="toggle-thumb"></div>
         </label>
       </div>
-
       <a href="#about-me"> {{ 'HEADER.ABOUT_ME' | translate }} </a>
       <a href="#skills"> {{ 'HEADER.SKILLS' | translate }} </a>
       <a href="#my-projects"> {{ 'HEADER.PROJECTS' | translate }} </a>
     </nav>
-
     <div class="burger-menu" [ngClass]="{ 'd-none': !isSmallScreen }">
       <mat-icon (click)="toggleMenu()" aria-hidden="false" aria-label="Example menu icon" fontIcon="menu"></mat-icon>
       <div [@openClose]="isMenuOpen ? 'open' : 'closed'" class="burger-menu-content">
@@ -35,8 +33,6 @@
         </nav>
       </div>
     </div>
-
-
     <div ngClass="logo" routerLink="/">
       <img [ngClass]="{ 'd-none': !isSmallScreen }" [ngStyle]="{ width: '80px' }" src="assets/img/favicon.png" alt="" />
       <img [ngClass]="{ 'd-none': isSmallScreen }" src="assets/img/pk-logo.png" alt="">

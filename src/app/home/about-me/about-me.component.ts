@@ -41,10 +41,4 @@ export class AboutMeComponent {
 			this.fadeIn = "visible";
 		}
 	}
-
-	onMouseEnter() {
-		this.isHovered = true;
-	}
-
-	onMouseLeave() {}
 }

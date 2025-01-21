@@ -48,12 +48,7 @@ export class HeaderComponent {
 		this.isGerman = !this.isGerman;
 		const newLang = this.isGerman ? "de" : "en";
 		this.translate.use(newLang);
-		localStorage.setItem("lang", newLang); // Sprache speichern
-	}
-
-	@HostListener("window:resize", ["$event"])
-	onResize(): void {
-		this.isSmallScreen = window.innerWidth <= 799;
+		localStorage.setItem("lang", newLang);
 	}
 
 	toggleMenu(): void {
@@ -61,6 +56,18 @@ export class HeaderComponent {
 	}
 
 	closeMenu(): void {
-		this.isMenuOpen = false; // Schließt das Menü, wenn ein Link angeklickt wird
+		this.isMenuOpen = false;
+	}
+
+	@HostListener("window:resize", ["$event"])
+	onResize(): void {
+		this.isSmallScreen = window.innerWidth <= 799;
+	}
+
+	@HostListener("window:scroll", ["$event"])
+	onScroll(): void {
+		if (this.isMenuOpen) {
+			this.closeMenu();
+		}
 	}
 }
