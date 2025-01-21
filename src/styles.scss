@@ -13,6 +13,18 @@ body {
   overflow-x: hidden;
 }
 
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
 .d-none {
   display: none !important;
 }
@@ -31,17 +43,6 @@ app-contact {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-html,
-body {
-  height: 100%;
-  scroll-behavior: smooth;
-
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 app-footer {

@@ -1,5 +1,9 @@
 @import "../../../../styles.scss";
 
+html, body {
+  overflow-x: hidden;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -183,8 +187,8 @@
 }
 
 .burger-menu-content {
-  position: absolute;
-  right: 0px;
+  position: fixed;
+  right: 16px;
   background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
   display: flex;
   flex-direction: column;
