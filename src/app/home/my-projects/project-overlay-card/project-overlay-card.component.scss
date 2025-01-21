@@ -9,11 +9,12 @@
   width: 100%;
   min-height: 100%;
   padding: 100px;
+  z-index: 9999;
 }
 
 h1 {
   color: #3DCFB6;
-  font-family: 'Karla' Arial, Helvetica, sans-serif;
+  font-family: 'Karla', Arial, Helvetica, sans-serif;
   font-size: 128px;
   font-weight: 700;
   line-height: 100px;
@@ -55,7 +56,6 @@ h3 {
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
-  padding: 16px;
   border-radius: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 90px 80px;
@@ -226,4 +226,118 @@ h3 {
       transform: translateX(5px) scale(1.1);
       color: #6fe1c5;
     }
+}
+
+@media (max-width: 1400px) {
+  .project-img {
+    width: 420px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .project-img {
+    width: 320px;
+  }
+}
+
+@media (max-width: 999px) {
+  :host {
+    padding: 0px 48px;
+  }
+
+  .overlay {
+    height: 95vh;
+    flex-direction: column-reverse;
+    gap: 32px;
+    padding: 64px 16px;
+    justify-content: center;
+  }
+
+  .project-img {
+    width: 320px;
+  }
+
+  .close-button {
+    top: 8px;
+    right: 12px;
+  }
+
+  .next-project-btn {
+    bottom: 8px;
+    right: 12px;
+  }
+}
+
+
+@media (max-width: 550px) {
+
+  :host {
+    padding: 0px 16px;
+  }
+
+  h1 {
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  h2 {
+    font-family: 'Fira-Code';
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 44.8px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+  }
+
+  h3 {
+    font-family: 'Fira-Code', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .project-title {
+    gap: 0px;
+  }
+
+  .description-container {
+    gap: 16px;
+  }
+
+  .description-text {
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .project-img {
+    width: 260px;
+  }
+
+  .project-tech {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .btn {
+    padding: 12px 12px;
+  }
 }
