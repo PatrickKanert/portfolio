@@ -24,8 +24,9 @@
           </div>
         </div>
       </div>
-      <div class="project-container" *ngIf="hoveredProject" [@fadeInRight]="fadeIn" [ngSwitch]="hoveredProject">
-        <div *ngFor="let project of projects">
+      <div class="project-container" [hidden]="!hoveredProject" [@fadeInRight]="hoveredProject ? 'visible' : 'hidden'"
+        [ngSwitch]="hoveredProject">
+        <div *ngFor=" let project of projects">
           <div class="project-background" [ngClass]="project.customClass" *ngSwitchCase="project.id">
             <img [src]="project.image" [alt]="project.title + ' Project'" />
           </div>

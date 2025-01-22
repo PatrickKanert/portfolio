@@ -1,7 +1,7 @@
 <div ngClass="content">
   <div ngClass="intro-section">
-    <h2 [@fadeInRight]="isBouncing">{{ 'LANDING.FRONTEND_DEVELOPER' | translate }}</h2>
-    <h1 [@fadeInLeft]="isBouncing">Patrick Kanert</h1>
+    <h2 [@fadeInRight]="fadeIn">{{ 'LANDING.FRONTEND_DEVELOPER' | translate }}</h2>
+    <h1 [@fadeInLeft]="fadeIn">Patrick Kanert</h1>
     <div ngClass="btn-container">
       <button (click)="scrollTo('my-projects')" ngClass="btn">
         <span>{{ 'LANDING.CHECK_WORK' | translate }}</span>

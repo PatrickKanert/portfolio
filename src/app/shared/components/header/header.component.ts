@@ -59,6 +59,13 @@ export class HeaderComponent {
 		this.isMenuOpen = false;
 	}
 
+	scrollTo(sectionId: string): void {
+		const element = document.getElementById(sectionId);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	}
+
 	@HostListener("window:resize", ["$event"])
 	onResize(): void {
 		this.isSmallScreen = window.innerWidth <= 799;

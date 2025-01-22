@@ -10,9 +10,9 @@
           <div class="toggle-thumb"></div>
         </label>
       </div>
-      <a href="#about-me"> {{ 'HEADER.ABOUT_ME' | translate }} </a>
-      <a href="#skills"> {{ 'HEADER.SKILLS' | translate }} </a>
-      <a href="#my-projects"> {{ 'HEADER.PROJECTS' | translate }} </a>
+      <a (click)="scrollTo('about-me')"> {{ 'HEADER.ABOUT_ME' | translate }} </a>
+      <a (click)="scrollTo('skills')"> {{ 'HEADER.SKILLS' | translate }} </a>
+      <a (click)="scrollTo('my-projects')"> {{ 'HEADER.PROJECTS' | translate }} </a>
     </nav>
     <div class="burger-menu" [ngClass]="{ 'd-none': !isSmallScreen }">
       <mat-icon (click)="toggleMenu()" aria-hidden="false" aria-label="Example menu icon" fontIcon="menu"></mat-icon>

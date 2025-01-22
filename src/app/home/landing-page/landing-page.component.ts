@@ -13,7 +13,7 @@ import { fadeInLeftAnimation, fadeInRightAnimation } from "angular-animations";
 export class LandingPageComponent {
 	sliderItems: string[] = [];
 	isSmallScreen: boolean = window.innerWidth <= 599;
-	isBouncing = false;
+	fadeIn = false;
 
 	constructor(private translate: TranslateService) {
 		this.updateSliderItems();
@@ -39,10 +39,10 @@ export class LandingPageComponent {
 	}
 
 	ngOnInit() {
-		this.isBouncing = false; // Erst auf false setzen
+		this.fadeIn = false;
 		setTimeout(() => {
-			this.isBouncing = true; // Dann aktivieren
-		}, 0); // Direkt im nächsten Zyklus ausführen
+			this.fadeIn = true;
+		}, 0);
 	}
 
 	scrollTo(sectionId: string): void {

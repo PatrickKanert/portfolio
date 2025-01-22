@@ -246,11 +246,11 @@ h3 {
   }
 
   .overlay {
-    height: 95vh;
+    height: 100%;
+    max-height: 95vh;
     flex-direction: column-reverse;
-    gap: 32px;
+    gap: 16px;
     padding: 64px 16px;
-    justify-content: center;
   }
 
   .project-img {
