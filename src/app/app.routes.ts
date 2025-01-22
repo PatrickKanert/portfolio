@@ -7,4 +7,5 @@ export const routes: Routes = [
 	{ path: "", component: HomeComponent },
 	{ path: "imprint", component: ImprintComponent },
 	{ path: "privacy-policy", component: PrivacyPolicyComponent },
+	{ path: "**", redirectTo: "" },
 ];

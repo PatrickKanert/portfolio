@@ -71,22 +71,22 @@ export class MyProjectsComponent {
 			githubUrl: "https://github.com/PatrickKanert/ElPoloLoco",
 			liveTestUrl: "https://patrick-kanert.com/ElPolloLoco/index.html",
 		},
-		{
-			id: "da_bubble",
-			index: 3,
-			title: "DA Bubble",
-			description:
-				"This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-			technologies: [
-				{ name: "Angular", imgUrl: "assets/img/tech/angular.png" },
-				{ name: "Firebase", imgUrl: "assets/img/tech/firebase.png" },
-				{ name: "TypeScript", imgUrl: "assets/img/tech/ts.png" },
-			],
-			image: "assets/img/projects/da-bubble.png",
-			customClass: "bottom",
-			githubUrl: "#",
-			liveTestUrl: "#",
-		},
+		// {
+		// 	id: "da_bubble",
+		// 	index: 3,
+		// 	title: "DA Bubble",
+		// 	description:
+		// 		"This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+		// 	technologies: [
+		// 		{ name: "Angular", imgUrl: "assets/img/tech/angular.png" },
+		// 		{ name: "Firebase", imgUrl: "assets/img/tech/firebase.png" },
+		// 		{ name: "TypeScript", imgUrl: "assets/img/tech/ts.png" },
+		// 	],
+		// 	image: "assets/img/projects/da-bubble.png",
+		// 	customClass: "bottom",
+		// 	githubUrl: "#",
+		// 	liveTestUrl: "#",
+		// },
 	];
 
 	hoveredProject: string | null = null;
