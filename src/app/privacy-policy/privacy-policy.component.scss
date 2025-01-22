@@ -1,12 +1,15 @@
 :host {
   font-family: 'Karla', Arial, Helvetica, sans-serif;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 div {
   padding: 140px 100px 32px 100px;
   color: white;
-  font-family: 'Karla';
+  font-family: 'Karla', Arial, Helvetica, sans-serif;
+  max-width: 1440px;
 }
 
 a {
