@@ -62,13 +62,13 @@
     "successMessage": "Deine Nachricht wurde erfolgreich gesendet. Vielen Dank!"
   },
   "contactText": {
-    "title": "Kontaktiere mich",
-    "subtitle": "Dein Projekt, mein Ziel",
-    "question": "Hast du ein Problem zu lösen?",
-    "description": "Kontaktiere mich über dieses Formular. Ich bin daran interessiert, von dir zu hören, deine Ideen zu erfahren und mit meiner Arbeit zu deinen Projekten beizutragen.",
+    "title": "Kontaktieren Sie mich",
+    "subtitle": "Ihr Projekt, meine Mission",
+    "question": "Haben sie ein Problem zu lösen?",
+    "description": "Dann schreiben Sie mir gerne über das Formular! Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihrem Projekt beizutragen.",
     "cta": {
-      "text": "Suchst du einen Frontend-Entwickler?",
-      "highlight": "Lass uns reden!"
+      "text": "Suchen Sie einen Frontend-Entwickler?",
+      "highlight": "Lass Sie uns reden!"
     }
   },
   "footer": {
