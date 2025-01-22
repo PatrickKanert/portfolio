@@ -47,7 +47,8 @@
     <span>{{ "contactForm.submitBtn" | translate }}</span>
   </button>
 </form>
-<div class="overlay" *ngIf="formSubmitted()">
+
+<div *ngIf="formSubmitted()" class="overlay">
   <div class="success-dialog">
     {{ "contactForm.successMessage" | translate }}
     <button class="btn" (click)="closeDialog()">Ok</button>

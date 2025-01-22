@@ -18,14 +18,9 @@ import { ContactFormComponent } from "./contact-form/contact-form.component";
 	styleUrl: "./contact.component.scss",
 	animations: [
 		trigger("fadeInLeft", [
-			state("hidden", style({ opacity: 0, transform: "translateX(-150px)" })), // Startzustand
-			state("visible", style({ opacity: 1, transform: "translateX(0)" })), // Endzustand
-			transition("hidden => visible", animate("500ms ease-in-out")), // Animation
-		]),
-		trigger("fadeInRight", [
-			state("hidden", style({ opacity: 0, transform: "translateX(150px)" })), // Startzustand
-			state("visible", style({ opacity: 1, transform: "translateX(0)" })), // Endzustand
-			transition("hidden => visible", animate("500ms ease-in-out")), // Animation
+			state("hidden", style({ opacity: 0, transform: "translateX(-150px)" })),
+			state("visible", style({ opacity: 1, transform: "translateX(0)" })),
+			transition("hidden => visible", animate("500ms ease-in-out")),
 		]),
 	],
 })

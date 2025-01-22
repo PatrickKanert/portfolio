@@ -49,6 +49,10 @@ app-footer {
   justify-content: center;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .btn {
   font-family: "Karla", Arial, Helvetica, sans-serif;
   font-size: 18px;

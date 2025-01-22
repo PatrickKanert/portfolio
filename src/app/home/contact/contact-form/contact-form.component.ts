@@ -45,31 +45,31 @@ export class ContactFormComponent {
 	};
 
 	onSubmit(ngForm: NgForm) {
+		if (!ngForm.valid) return;
+
 		this.formSubmitted.set(true);
-		if (ngForm.submitted && ngForm.form.valid) {
-			this.formSubmitted.set(true);
-			document.body.classList.add("no-scroll");
+		document.body.classList.add("no-scroll");
 
-			this.http
-				.post(this.post.endPoint, this.post.body(this.contactData))
-				.subscribe({
-					next: (response) => {
-						console.log("Form erfolgreich gesendet:", response);
-						ngForm.resetForm();
-					},
-					error: (error) => {
-						console.error("Fehler beim Senden des Formulars:", error);
-					},
-					complete: () => {
-						console.info("Formular erfolgreich verarbeitet.");
-					},
-				});
-		}
+		this.http
+			.post(this.post.endPoint, this.post.body(this.contactData))
+			.subscribe({
+				next: (response) => {
+					console.log("Form erfolgreich gesendet:", response);
+					this.resetForm(ngForm);
+				},
+				error: (error) => {
+					console.error("Fehler beim Senden des Formulars:", error);
+				},
+				complete: () => {
+					console.info("Formular erfolgreich verarbeitet.");
+				},
+			});
+		setTimeout(() => this.closeDialog(), 3000);
+	}
 
-		setTimeout(() => {
-			this.formSubmitted.set(false);
-			document.body.classList.remove("no-scroll");
-		}, 3000);
+	resetForm(ngForm: NgForm) {
+		ngForm.resetForm();
+		this.privacyPolicyChecked = false;
 	}
 
 	closeDialog() {
