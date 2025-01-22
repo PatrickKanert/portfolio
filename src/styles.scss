@@ -13,40 +13,14 @@ body {
   overflow-x: hidden;
 }
 
-.d-none {
-  display: none !important;
-}
-
-app-landing-page {
-  background: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-}
-
-app-contact {
-  padding: 0px 100px 135px 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 html,
 body {
   height: 100%;
   scroll-behavior: smooth;
-
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-app-footer {
-  display: flex;
-  justify-content: center;
+.d-none {
+  display: none !important;
 }
 
 .no-scroll {
@@ -96,12 +70,6 @@ app-footer {
   }
 }
 
-@media (max-width: 999px) {
-  app-contact {
-    padding: 0px 16px 100px 16px;
-  }
-}
-
 // Fonts //
 
 @font-face {
@@ -113,7 +81,6 @@ app-footer {
   font-family: "Karla";
   src: url(assets/fonts/Karla/Karla-VariableFont_wght.ttf);
 }
-
 
 /* Scrollbar */
 

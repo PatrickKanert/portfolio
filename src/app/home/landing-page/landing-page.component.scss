@@ -1,5 +1,14 @@
 @import "../../../styles.scss";
 
+:host {
+  background: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
 .content {
   height: 100vh;
   width: 100vw;
