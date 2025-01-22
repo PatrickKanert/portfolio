@@ -1,5 +1,6 @@
 :host {
-  font-family: 'Karla', Arial, Helvetica, sans-serif
+  font-family: 'Karla', Arial, Helvetica, sans-serif;
+  position: relative;
 }
 
 div {
@@ -24,4 +25,33 @@ h2 {
   color: #3DCFB6;
   margin: 56px 0px 16px 0px;
   font-weight: bold;
+}
+
+.arrow-back-icon {
+  color: white;
+  position: absolute;
+  top: 142px;
+  right: 150px;
+  font-size: 48px;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.1s ease;
+
+
+  &:hover {
+    transform: scale(1.1);
+    color: #6fe1c5;
+  }
+}
+
+@media (max-width: 999px) {
+  div {
+    padding: 140px 32px 32px 32px;
+  }
+
+  .arrow-back-icon {
+    right: 40px;
+    font-size: 32px;
+  }
 }
