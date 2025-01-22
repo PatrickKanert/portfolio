@@ -73,7 +73,6 @@ h2 {
   --gap: 56px;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 16px;
   z-index: 2;
   backdrop-filter: blur(5px);
@@ -103,7 +102,7 @@ h2 {
 
 @keyframes scroll {
   to {
-    transform: translateX(-90%);
+    transform: translateX(-100%);
   }
 }
 
