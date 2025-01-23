@@ -63,7 +63,7 @@ h2 {
 }
 
 .info-carousel {
-  width: 100%;
+  width: 105%;
   height: 60px;
   background-color: #ffffff1f;
   rotate: -3deg;
@@ -295,5 +295,23 @@ h2 {
 
   .placeholder-line-social-media {
     height: 110px;
+  }
+}
+
+@media (max-height: 790px) and (max-width: 399px) {
+  .btn-container {
+    max-width: 250px;
+    gap: 16px !important;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 12px 8px;
+  }
+}
+
+@media (max-height: 630px) and (max-width: 399px) {
+  h1 {
+    font-size: 32px;
   }
 }
