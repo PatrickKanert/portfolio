@@ -1,6 +1,6 @@
 <div class="wrapper">
   <div class="left-side">
-    <img src="assets/img/pk-logo.png" alt="Logo" (click)="scrollToTop()">
+    <img src="assets/img/pk-logo.png" alt="Logo" routerLink="/" (click)="scrollToTop()">
     <div>
       <span>{{ "footer.left.title" | translate }}</span>
       <span>{{ "footer.left.location" | translate }}</span>
@@ -14,6 +14,6 @@
       translate }}</a>
     <a href="https://linkedin.com/in/patrick-kanert-633647348/">{{ "footer.right.linkedin" | translate }}</a>
     <a ngClass="flip-email" href="mailto:info@patrick-kanert.com">{{ "footer.right.email" | translate }}</a>
-    <a routerLink="/imprint">{{ "footer.right.imprint" | translate }}</a>
+    <a (click)="scrollToTop()" routerLink="/imprint">{{ "footer.right.imprint" | translate }}</a>
   </div>
 </div>

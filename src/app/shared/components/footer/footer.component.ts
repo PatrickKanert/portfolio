@@ -17,4 +17,8 @@ export class FooterComponent {
 			behavior: "smooth", // Optional: Smooth scrolling
 		});
 	}
+
+	ngOnInit(): void {
+		window.scrollTo({ top: 0, behavior: "smooth" }); // Scrollt zur Oberseite
+	}
 }
