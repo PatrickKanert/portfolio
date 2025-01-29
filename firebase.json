@@ -1,9 +1,0 @@
-{
-  "hosting": [
-    {
-      "target": "portfolio",
-      "source": ".",
-      "frameworksBackend": {}
-    }
-  ]
-}

@@ -4,9 +4,6 @@ import {
 	provideHttpClient,
 } from "@angular/common/http";
 import { ApplicationConfig, importProvidersFrom } from "@angular/core";
-import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
-import { getDatabase, provideDatabase } from "@angular/fire/database";
-import { getFirestore, provideFirestore } from "@angular/fire/firestore";
 import { provideAnimations } from "@angular/platform-browser/animations";
 import { provideRouter } from "@angular/router";
 import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
@@ -24,22 +21,6 @@ export const appConfig: ApplicationConfig = {
 		provideRouter(routes),
 		provideHttpClient(),
 		provideAnimations(),
-
-		// Firebase-Provider
-		importProvidersFrom(
-			provideFirebaseApp(() =>
-				initializeApp({
-					projectId: "portfolio-52375",
-					appId: "1:163058226139:web:94dc8f680da98c6b0a4dfe",
-					storageBucket: "portfolio-52375.firebasestorage.app",
-					apiKey: "AIzaSyDZlsrkMMHv__LelsK41_QI9RXHe05kZH0",
-					authDomain: "portfolio-52375.firebaseapp.com",
-					messagingSenderId: "163058226139",
-				}),
-			),
-			provideFirestore(() => getFirestore()),
-			provideDatabase(() => getDatabase()),
-		),
 
 		// HttpClient und TranslateModule-Provider
 		importProvidersFrom(
