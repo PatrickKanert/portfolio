@@ -55,7 +55,7 @@
     "messagePlaceholder": "Enter a message...",
     "messageError": "What do you need to develop?",
     "privacyPolicy1": "I've read the",
-    "privacyPolicy2": "privacy policy",
+    "privacyPolicy2": "Privacy Policy",
     "privacyPolicy3": " and agree to the processing of my data as outlined. ",
     "privacyPolicyError": "Please accept the privacy policy.",
     "submitBtn": "Say Hello :)",
@@ -83,7 +83,8 @@
       "github": "Github",
       "linkedin": "LinkedIn",
       "email": "Email",
-      "imprint": "Imprint"
+      "imprint": "Imprint",
+      "privacyPolicy": "Privacy Policy"
     }
   },
   "imprint": {
