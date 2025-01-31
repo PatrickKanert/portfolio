@@ -17,14 +17,14 @@
     "TITLE": "Über mich",
     "INTRO": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus der Nähe von Passau. Begeistert von den unbegrenzten Möglichkeiten der IT freue ich mich darauf, visuell ansprechende und intuitive Websites und Anwendungen zu gestalten.",
     "LOCATION": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in der Nähe von Passau als auch remote effektiv arbeiten.",
-    "OPEN_MINDED": "Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten ständig zu verbessern.",
+    "OPEN_MINDED": "Ich bin aufgeschlossen und immer auf der Suche nach neuen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
     "QUALITY": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code, es ist eine kreative Form der Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen umzuwandeln. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
   },
   "SKILLS": {
     "TECHNOLOGIES": "Technologien",
     "SKILL_SET": "Skill set",
     "SKILL_DESCRIPTION": "Mein Weg hat mich durch verschiedene Projekte geführt, bei denen ich eine Vielzahl von Frontend-Technologien und Konzepten eingesetzt habe. Ich bin offen dafür, neue Technologien und Methoden zu übernehmen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig wandelnden Welt der Webentwicklung voraus zu sein.",
-    "NEED_ANOTHER_SKILL": "Sie benötigen",
+    "NEED_ANOTHER_SKILL": "Benötigen Sie",
     "NEED_ANOTHER_SKILL_PART2": "weitere Fähigkeiten?",
     "ANOTHER_SKILL_DESCRIPTION": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
     "LETS_TALK": "Kontaktieren sie mich",
@@ -33,42 +33,42 @@
   "PORTFOLIO": {
     "TITLE": "Portfolio",
     "FEATURED_PROJECTS": "Meine Projekte",
-    "EXPLORE": "Entdecke eine Auswahl meiner Arbeiten hier - Interagiere mit Projekten, um meine Fähigkeiten in Aktion zu sehen."
+    "EXPLORE": "Entdecken Sie eine Auswahl meiner Arbeiten hier – interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu erleben."
   },
   "PROJECT": {
     "ABOUT": "Worum geht es in diesem Projekt?",
     "DESCRIPTION": {
       "JOIN": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
-      "EL_POLLO_LOCO": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+      "EL_POLLO_LOCO": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
       "DA_BUBBLE": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation mit intuitiver Benutzeroberfläche, Echtzeit-Nachrichten und robusten Kanälen."
     }
   },
   "contactForm": {
-    "nameLabel": "Wie heißt du?",
-    "namePlaceholder": "Dein Name hier",
-    "nameError": "Hoppla! Es scheint, dein Name fehlt",
-    "emailLabel": "Wie lautet deine E-Mail-Adresse?",
-    "emailPlaceholder": "deinemail@email.com",
-    "emailError": "Hoppla! Deine E-Mail-Adresse wird benötigt",
-    "emailInvalid": "Bitte ein gültiges E-Mail-Format eingeben.",
-    "messageLabel": "Wie kann ich dir helfen?",
+    "nameLabel": "Wie ist Ihr Name?",
+    "namePlaceholder": "Ihr Name hier",
+    "nameError": "Hoppla! Ihr Name fehlt.",
+    "emailLabel": "Wie lautet Ihre E-Mail-Adresse?",
+    "emailPlaceholder": "ihreemail@email.com",
+    "emailError": "Hoppla! Ihre E-Mail-Adresse wird benötigt.",
+    "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "messageLabel": "Wie kann ich Ihnen helfen?",
     "messagePlaceholder": "Nachricht eingeben...",
-    "messageError": "Was möchtest du entwickeln?",
+    "messageError": "Was möchten Sie entwickeln?",
     "privacyPolicy1": "Ich habe die",
     "privacyPolicy2": "Datenschutzerklärung",
     "privacyPolicy3": " gelesen und stimme der Verarbeitung meiner Daten zu.",
-    "privacyPolicyError": "Bitte akzeptiere die Datenschutzerklärung.",
+    "privacyPolicyError": "Bitte akzeptieren Sie die Datenschutzerklärung.",
     "submitBtn": "Sagen Sie Hallo :)",
-    "successMessage": "Deine Nachricht wurde erfolgreich gesendet. Vielen Dank!"
+    "successMessage": "Ihre Nachricht wurde erfolgreich gesendet. Vielen Dank!"
   },
   "contactText": {
     "title": "Kontaktieren Sie mich",
     "subtitle": "Ihr Projekt, meine Mission",
-    "question": "Haben sie ein Problem zu lösen?",
+    "question": "Haben Sie ein Problem zu lösen?",
     "description": "Dann schreiben Sie mir gerne über das Formular! Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihrem Projekt beizutragen.",
     "cta": {
       "text": "Suchen Sie einen Frontend-Entwickler?",
-      "highlight": "Lass Sie uns reden!"
+      "highlight": "Lassen Sie uns sprechen!"
     }
   },
   "footer": {
