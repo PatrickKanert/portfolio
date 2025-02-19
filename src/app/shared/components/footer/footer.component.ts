@@ -14,11 +14,11 @@ export class FooterComponent {
 	scrollToTop(): void {
 		window.scrollTo({
 			top: 0,
-			behavior: "smooth", // Optional: Smooth scrolling
+			behavior: "smooth",
 		});
 	}
 
 	ngOnInit(): void {
-		window.scrollTo({ top: 0, behavior: "smooth" }); // Scrollt zur Oberseite
+		window.scrollTo({ top: 0, behavior: "smooth" });
 	}
 }
